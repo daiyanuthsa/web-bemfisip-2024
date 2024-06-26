@@ -34,4 +34,10 @@ class Satuan extends Model
     protected $casts = [
         'satuan' => 'string',
     ];
+    
+    // Define the relationship with the Anggota model
+    public function anggotas()
+    {
+        return $this->hasMany(Anggota::class);
+    }
 }
