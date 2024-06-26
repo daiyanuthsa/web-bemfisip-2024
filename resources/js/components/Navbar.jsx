@@ -12,8 +12,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="w-full lg:rounded-bl-xl fixed bg-[#006181] top-0 py-3 lg:py-4 z-50 text-white">
-            <main className="container mx-auto lg:px-16 md:px-10 bg-[#006181] px-4 flex justify-center items-center relative z-20 lg:justify-between">
+        <nav className="w-full lg:rounded-bl-xl fixed h-[12vh] bg-[#006181] top-0  z-50 text-white">
+            <main className="container mx-auto lg:px-16 md:px-10 bg-[#006181] h-full px-4 flex justify-center items-center relative z-20 lg:justify-between">
                 <img
                     src={Logo}
                     alt="logo-img"
@@ -27,10 +27,8 @@ const Navbar = () => {
                 />
 
                 <img src={MobileLogo} className="lg:hidden block" alt="" />
-                <ul className="lg:flex hidden text-xl font-inter font-bold items-center gap-10">
+                <ul className="lg:flex hidden text-xl font-inter h-full relative font-bold items-center gap-10">
                     <NavLink to="/" text="Beranda" />
-                    <NavLink to="/tentang" text="Tentang" />
-                    <NavLink to="/mitra" text="Mitra" />
                     <DropdownNavLink
                         text="Kabinet"
                         items={[
@@ -39,75 +37,69 @@ const Navbar = () => {
                                 text: "Kepengurusan",
                                 items: [
                                     {
-                                        text: "Kementerian",
-                                        items: [
-                                            {
-                                                text: "Kementerian Dalam Negeri",
-                                                to: "/kementerian-dalam-negeri",
-                                            },
-                                            {
-                                                text: "Kementerian Luar Negeri",
-                                                to: "/kementerian-luar-negeri",
-                                            },
-                                            {
-                                                text: "Kementerian Pengembangan Sumber Daya Manusia",
-                                                to: "/kementerian-psdm",
-                                            },
-                                            {
-                                                text: "Kementerian Pengarusutamaan Gender",
-                                                to: "/kementerian-gender",
-                                            },
-                                            {
-                                                text: "Kementerian Sosial dan Lingkungan",
-                                                to: "/kementerian-sosling",
-                                            },
-                                            {
-                                                text: "Kementerian Kajian dan Aksi Strategis",
-                                                to: "/kementerian-kas",
-                                            },
-                                            {
-                                                text: "Kementerian Inovasi dan Karya",
-                                                to: "/kementerian-inovasi-karya",
-                                            },
-                                            {
-                                                text: "Kementerian Ekonomi Kreatif",
-                                                to: "/kementerian-ekraf",
-                                            },
-                                            {
-                                                text: "Kementerian Advokasi dan Kesejahteraan Mahasiswa",
-                                                to: "/kementerian-advokesma",
-                                            },
-                                            {
-                                                text: "Kementerian Seni dan Olahraga",
-                                                to: "/kementerian-senor",
-                                            },
-                                        ],
+                                        text: "Biro Kesekretariatan",
+                                        to: "/biro-kesekretariatan",
                                     },
                                     {
-                                        text: "Biro",
-                                        items: [
-                                            {
-                                                text: "Biro Kesekretariatan",
-                                                to: "/biro-kesekretariatan",
-                                            },
-                                            {
-                                                text: "Biro Keuangan",
-                                                to: "/biro-keuangan",
-                                            },
-                                            {
-                                                text: "Biro Pusat Komunikasi dan Informasi",
-                                                to: "/biro-pusat-kominfo",
-                                            },
-                                            {
-                                                text: "Biro Pemberdayaan Aparatur Organisasi",
-                                                to: "/biro-pao",
-                                            },
-                                        ],
+                                        text: "Biro Keuangan",
+                                        to: "/biro-keuangan",
                                     },
+                                    {
+                                        text: "Biro Pusat Komunikasi dan Informasi",
+                                        to: "/biro-pusat-kominfo",
+                                    },
+                                    {
+                                        text: "Biro Pemberdayaan Aparatur Organisasi",
+                                        to: "/biro-pao",
+                                    },
+                                    {
+                                        text: "Kementerian Dalam Negeri",
+                                        to: "/kementerian-dalam-negeri",
+                                    },
+                                    {
+                                        text: "Kementerian Luar Negeri",
+                                        to: "/kementerian-luar-negeri",
+                                    },
+                                    {
+                                        text: "Kementerian Pengembangan Sumber Daya Manusia",
+                                        to: "/kementerian-psdm",
+                                    },
+                                    {
+                                        text: "Kementerian Pengarusutamaan Gender",
+                                        to: "/kementerian-gender",
+                                    },
+                                    {
+                                        text: "Kementerian Sosial dan Lingkungan",
+                                        to: "/kementerian-sosling",
+                                    },
+                                    {
+                                        text: "Kementerian Kajian dan Aksi Strategis",
+                                        to: "/kementerian-kas",
+                                    },
+                                    {
+                                        text: "Kementerian Inovasi dan Karya",
+                                        to: "/kementerian-inovasi-karya",
+                                    },
+                                    {
+                                        text: "Kementerian Ekonomi Kreatif",
+                                        to: "/kementerian-ekraf",
+                                    },
+                                    {
+                                        text: "Kementerian Advokasi dan Kesejahteraan Mahasiswa",
+                                        to: "/kementerian-advokesma",
+                                    },
+                                    {
+                                        text: "Kementerian Seni dan Olahraga",
+                                        to: "/kementerian-senor",
+                                    },
+                                   
+                                    
                                 ],
                             },
                         ]}
                     />
+                    <NavLink to="/tentang" text="Tentang" />
+                    <NavLink to="/mitra" text="Mitra" />
                     <NavLink to="/" text="Informasi" />
                 </ul>
             </main>
@@ -131,71 +123,63 @@ const Navbar = () => {
                                 text: "Kepengurusan",
                                 items: [
                                     {
-                                        text: "Kementerian",
-                                        items: [
-                                            {
-                                                text: "Kementerian Dalam Negeri",
-                                                to: "/kementerian-dalam-negeri",
-                                            },
-                                            {
-                                                text: "Kementerian Luar Negeri",
-                                                to: "/kementerian-luar-negeri",
-                                            },
-                                            {
-                                                text: "Kementerian Pengembangan Sumber Daya Manusia",
-                                                to: "/kementerian-psdm",
-                                            },
-                                            {
-                                                text: "Kementerian Pengarusutamaan Gender",
-                                                to: "/kementerian-gender",
-                                            },
-                                            {
-                                                text: "Kementerian Sosial dan Lingkungan",
-                                                to: "/kementerian-sosling",
-                                            },
-                                            {
-                                                text: "Kementerian Kajian dan Aksi Strategis",
-                                                to: "/kementerian-kas",
-                                            },
-                                            {
-                                                text: "Kementerian Inovasi dan Karya",
-                                                to: "/kementerian-inovasi-karya",
-                                            },
-                                            {
-                                                text: "Kementerian Ekonomi Kreatif",
-                                                to: "/kementerian-ekraf",
-                                            },
-                                            {
-                                                text: "Kementerian Advokasi dan Kesejahteraan Mahasiswa",
-                                                to: "/kementerian-advokesma",
-                                            },
-                                            {
-                                                text: "Kementerian Seni dan Olahraga",
-                                                to: "/kementerian-senor",
-                                            },
-                                        ],
+                                        text: "Biro Kesekretariatan",
+                                        to: "/biro-kesekretariatan",
                                     },
                                     {
-                                        text: "Biro",
-                                        items: [
-                                            {
-                                                text: "Biro Kesekretariatan",
-                                                to: "/biro-kesekretariatan",
-                                            },
-                                            {
-                                                text: "Biro Keuangan",
-                                                to: "/biro-keuangan",
-                                            },
-                                            {
-                                                text: "Biro Pusat Komunikasi dan Informasi",
-                                                to: "/biro-pusat-kominfo",
-                                            },
-                                            {
-                                                text: "Biro Pemberdayaan Aparatur Organisasi",
-                                                to: "/biro-pao",
-                                            },
-                                        ],
+                                        text: "Biro Keuangan",
+                                        to: "/biro-keuangan",
                                     },
+                                    {
+                                        text: "Biro Pusat Komunikasi dan Informasi",
+                                        to: "/biro-pusat-kominfo",
+                                    },
+                                    {
+                                        text: "Biro Pemberdayaan Aparatur Organisasi",
+                                        to: "/biro-pao",
+                                    },
+                                    {
+                                        text: "Kementerian Dalam Negeri",
+                                        to: "/kementerian-dalam-negeri",
+                                    },
+                                    {
+                                        text: "Kementerian Luar Negeri",
+                                        to: "/kementerian-luar-negeri",
+                                    },
+                                    {
+                                        text: "Kementerian Pengembangan Sumber Daya Manusia",
+                                        to: "/kementerian-psdm",
+                                    },
+                                    {
+                                        text: "Kementerian Pengarusutamaan Gender",
+                                        to: "/kementerian-gender",
+                                    },
+                                    {
+                                        text: "Kementerian Sosial dan Lingkungan",
+                                        to: "/kementerian-sosling",
+                                    },
+                                    {
+                                        text: "Kementerian Kajian dan Aksi Strategis",
+                                        to: "/kementerian-kas",
+                                    },
+                                    {
+                                        text: "Kementerian Inovasi dan Karya",
+                                        to: "/kementerian-inovasi-karya",
+                                    },
+                                    {
+                                        text: "Kementerian Ekonomi Kreatif",
+                                        to: "/kementerian-ekraf",
+                                    },
+                                    {
+                                        text: "Kementerian Advokasi dan Kesejahteraan Mahasiswa",
+                                        to: "/kementerian-advokesma",
+                                    },
+                                    {
+                                        text: "Kementerian Seni dan Olahraga",
+                                        to: "/kementerian-senor",
+                                    },
+                                   
+                                    
                                 ],
                             },
                         ]}
@@ -210,7 +194,7 @@ const Navbar = () => {
 const NavLink = ({ to, text, mobile }) => (
     <Link
         href={to}
-        className={`relative group lg:hover:bg-inherit lg:hover:text-inherit hover:bg-white w-full  hover:text-[#006181] duration-300 ease-in-out `}
+        className={`relative group lg:hover:bg-inherit lg:hover:text-inherit  hover:bg-white w-full  hover:text-[#006181] duration-300 ease-in-out `}
     >
         {text}
         <div
@@ -223,9 +207,9 @@ const NavLink = ({ to, text, mobile }) => (
 
 const DropdownNavLink = ({ text, items }) => {
     return (
-        <div className="relative group ">
+        <div className=" group h-full flex items-center">
             <span className="cursor-pointer">{text}</span>
-            <div className="absolute left-0 hidden group-hover:block text-base bg-[#006181] mt-2">
+            <div className="absolute left-[20%] bottom-0 translate-y-full hidden group-hover:block bg-[#006181] text-base  mt-0">
                 <ul className="py-2">
                     {items.map((item, index) => (
                         <li
@@ -238,13 +222,13 @@ const DropdownNavLink = ({ text, items }) => {
                                 <>
                                     <span>{item.text}</span>
                                     {item.items && (
-                                        <div className="absolute right-full top-0 hidden group-hover/sub:block bg-[#006181]">
-                                            <ul className="py-2">
+                                        <div className="absolute left-full top-0 hidden group-hover/sub:block bg-[#006181]">
+                                            <ul className="py-2 h-52 overflow-auto">
                                                 {item.items.map(
                                                     (subItem, subIndex) => (
                                                         <li
                                                             key={subIndex}
-                                                            className="relative group/subsub px-4 py-2 hover:bg-[#007399]"
+                                                            className="relative group/subsub px-4 py-2 w-72 hover:bg-[#007399]"
                                                         >
                                                             {subItem.to ? (
                                                                 <Link

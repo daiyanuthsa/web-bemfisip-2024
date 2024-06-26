@@ -10,5 +10,11 @@ Route::get('/', function () {
 Route::get('/tentang', function () {
     return Inertia::render('Tentang');
 });
+Route::get('/organigram', function () {
+    return Inertia::render('Organigram');
+});
+Route::get('/mitra', function () {
+    return Inertia::render('Mitra');
+});
 Route::get('/artikel',[ArtikelController::class,'index']);
 Route::get('/artikel/{id}', [ArtikelController::class,'show']);
