@@ -25,13 +25,12 @@ class SatuanResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('slug')
                     ->maxLength(50),
-                Forms\Components\Select::make('satuan')
-                    ->options([
-                        'BIRO' => 'BIRO',
-                        'KEMENTERIAN' => 'KEMENTERIAN',
-                    ])->required(),
+                Forms\Components\TextInput::make('satuan'),
                 Forms\Components\TextInput::make('nama_satuan')
                     ->maxLength(255),
+                Forms\Components\TextArea::make('deskripsi')
+                    ->required()
+                    ->maxLength(500)->columnSpanFull(),
             ]);
     }
 
@@ -39,12 +38,21 @@ class SatuanResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('satuan'),
                 Tables\Columns\TextColumn::make('nama_satuan')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('deskripsi')
+                    ->formatStateUsing(fn(string $state): string => \Illuminate\Support\Str::limit($state, 50, '...')),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

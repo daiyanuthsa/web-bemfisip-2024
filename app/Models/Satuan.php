@@ -26,6 +26,7 @@ class Satuan extends Model
         'slug',
         'satuan',
         'nama_satuan',
+        'deskripsi',
         'updated_at',
         'created_at',
     ];
@@ -34,10 +35,14 @@ class Satuan extends Model
     protected $casts = [
         'satuan' => 'string',
     ];
-    
+
     // Define the relationship with the Anggota model
     public function anggotas()
     {
-        return $this->hasMany(Anggota::class);
+        return $this->hasMany(Anggota::class, 'satuan_id');
+    }
+    public function programKerja()
+    {
+        return $this->hasMany(ProgramKerja::class, 'id_satuan');
     }
 }

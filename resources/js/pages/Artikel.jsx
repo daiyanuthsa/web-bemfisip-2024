@@ -4,6 +4,7 @@ import hiasan from "../../assets/Artikel/hiasan.png";
 import pattern from "../../assets/Artikel/pattern.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Head, Link} from "@inertiajs/react";
+import Navbar from "../components/Navbar";
 
 
 const dummy = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -12,6 +13,7 @@ export default function Artikel({artikels})  {
   console.log(artikels)
   return (
     <>
+    <Navbar/>
     <Head title="artikel"/>
     <div className="bg-[#F7EDE4] font-inter w-full">
       <header className="relative lg:h-screen w-full flex flex-col items-start gap-24">

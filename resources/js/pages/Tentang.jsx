@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import gedung from "../../assets/Tentang/tentangImage.png";
 const Tentang = () => {
   return (
+    <>
+    <Navbar />
     <div className="bg-[#F7EDE4]">
       <header className="w-full h-screen flex flex-col justify-center items-center gap-4 font-inter text-[#805555]">
         <h3 className="text-7xl font-bold">SEJARAH</h3>
@@ -18,8 +20,7 @@ const Tentang = () => {
               src={gedung}
               alt="img"
               className="w-full aspect-auto absolute bottom-1/4 -z-10  left-3/4"
-              draggable="false"
-            />
+              draggable="false" />
             <div className="bg-[#FCEDE0] text-[#4C2C17] size-full p-10 flex flex-col gap-4">
               <p>
                 Berdirinya Fakultas Ilmu Sosial dan Ilmu Politik ini, bermula
@@ -68,6 +69,7 @@ const Tentang = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
