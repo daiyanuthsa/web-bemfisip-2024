@@ -16,6 +16,7 @@ class Anggota extends Model
         'nama_anggota',
         'status',
         'nama_jabatan',
+        'instagram',
         'image_link',
         'satuan_id',
     ];
