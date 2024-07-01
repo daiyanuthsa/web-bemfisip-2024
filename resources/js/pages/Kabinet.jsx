@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import daunkanan from "../../assets/LandingPage/daun.png";
 import daunkiri from "../../assets/LandingPage/daun2.png";
 import Navbar from "../components/Navbar";
+import { Head } from "@inertiajs/react";
 const Kabinet = ({ satuan, proker, bph, staf }) => {
     console.log(satuan);
     console.log(proker);
@@ -11,6 +12,8 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
     const { nama } = useParams();
     return (
         <>
+            <Head title={`BEM FISIP 2024||${satuan.slug}`} />
+
             <Navbar />
             <div className="bg-[#F7EDE4] font-inter">
                 <header className="h-screen w-full relative flex flex-col overflow-hidden items-center justify-center gap-5">
@@ -53,7 +56,9 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                     </main>
                     <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap-reverse justify-center gap-[5%] ">
                         {bph.map((item, i) => (
-                            <div
+                            <a
+                                href={item.instagram}
+                                target="_blank"
                                 key={i}
                                 className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
                             >
@@ -76,19 +81,24 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                         {item.nama_jabatan}
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
 
-                    <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap-reverse justify-center ">
+                    <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap justify-center gap-[2%] ">
                         {staf.map((item, i) => (
-                            <div
+                            <a
+                                href={item.instagram}
+                                target="_blank"
                                 key={i}
-                                className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
+                                className="md:w-2/5 w-full lg:w-[23%] flex flex-col mt-5"
                             >
                                 <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
                                     <img
-                                        src={"http://127.0.0.1:8000/storage/" + item.image_link}
+                                        src={
+                                            "http://127.0.0.1:8000/storage/" +
+                                            item.image_link
+                                        }
                                         alt="img"
                                         className=" object-cover size-full bg-[#1F3A49] "
                                         draggable="false"
@@ -98,9 +108,11 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     <h1 className="text-xl font-semibold">
                                         {item.nama_anggota}
                                     </h1>
-                                    <p className="text-sm">{item.nama_jabatan}</p>
+                                    <p className="text-sm">
+                                        {item.nama_jabatan}
+                                    </p>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </section>

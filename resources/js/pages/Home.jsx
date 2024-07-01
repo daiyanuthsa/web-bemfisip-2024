@@ -16,7 +16,7 @@
     export default function Home() {
         return (
             <>
-                <Head title="Home" />
+                <Head title="BEM FISIP 2024||Home"  />
                 <div className="bg-[#F7EDE4]">
                     <PageLayout>
                     <Hero />

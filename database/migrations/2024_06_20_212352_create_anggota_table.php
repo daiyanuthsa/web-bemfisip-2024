@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nama_jabatan');
             $table->string('instagram');
             $table->string('image_link')->nullable();
-            $table->unsignedBigInteger('satuan_id')->nullable();
+            $table->integer('satuan_id')->nullable();
             $table->foreign('satuan_id')->references('id')->on('satuan')->onDelete('set null');
             $table->timestamps();
         });

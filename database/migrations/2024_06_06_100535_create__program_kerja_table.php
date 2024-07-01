@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('program_kerja', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('id_satuan'); // Menggunakan unsignedInteger agar kompatibel dengan id di tabel satuan
+            $table->integer('id_satuan'); // Menggunakan unsignedInteger agar kompatibel dengan id di tabel satuan
             $table->string('nama_proker', 255);
             $table->timestamps();
-
             $table->foreign('id_satuan')->references('id')->on('satuan')->onDelete('cascade');
         });
     }

@@ -14,7 +14,7 @@ export default function Artikel({artikels})  {
   return (
     <>
     <Navbar/>
-    <Head title="artikel"/>
+    <Head title="BEM FISIP 2024||Artikel" />
     <div className="bg-[#F7EDE4] font-inter w-full">
       <header className="relative lg:h-screen w-full flex flex-col items-start gap-24">
         <img

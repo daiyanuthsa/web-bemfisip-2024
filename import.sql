@@ -1,13 +1,3 @@
-INSERT INTO `anggota` (`id`, `nama_anggota`, `status`, `nama_jabatan`, `instagram`, `image_link`, `satuan_id`, `created_at`, `updated_at`) VALUES
-	(1, 'Mahiza Aidan', 'BPH', 'Kepala Biro', NULL, 'Anggota/3/Mahiza Aidan.jpg', 3, '2024-06-20 14:46:38', '2024-06-29 04:38:45'),
-	(2, 'Ilham Rafi Prathama', 'BPH', 'Kepala Bagian Redaksi Publikasi', NULL, 'Anggota/3/Ilham Rafi Prathama.jpg', 3, '2024-06-29 04:40:30', '2024-06-29 04:40:30'),
-	(3, 'Aisha Djody Shanata', 'BPH', 'Kepala Bagian Media Informasi', NULL, 'Anggota/3/Aisha Djody Shanata.jpg', 3, '2024-06-29 04:41:10', '2024-06-29 04:41:10'),
-	(4, 'Rosalia Sanika S.', 'BPH', 'Kepala Bagian Media Kreatif', NULL, 'Anggota/3/Rosalia Sanika Satyawada.jpg', 3, '2024-06-29 04:41:46', '2024-06-29 04:41:46'),
-	(5, 'Cindy Veronika Situmorang', 'STAF', 'Staf Ahli', 'chindyvrnk', 'Anggota/3/Chindy Veronika Situmorang.jpg', 3, '2024-06-29 05:36:05', '2024-06-29 05:36:05'),
-	(6, 'Cinta Ayu Amelia', 'STAF', 'Staf Ahli', 'cintaayuua', 'Anggota/3/Cinta Ayu Amelia.jpg', 3, '2024-06-29 05:37:09', '2024-06-29 05:37:09'),
-	(7, 'Dian Cahyaning Putri', 'STAF', 'Staf Ahli', 'diiannp_', 'Anggota/3/Dian Cahyaning Putri.jpg', 3, '2024-06-29 05:37:46', '2024-06-29 05:37:46'),
-	(8, 'Fiqi Nadhratul \'Ulya', 'STAF', 'Staf Ahli', 'fiqibu', 'Anggota/3/Fiqi Nadhratul \'Ulya.jpg', 3, '2024-06-29 05:38:20', '2024-06-29 05:38:20'),
-	(9, 'Ruth Gabriella Manik', 'STAF', 'Staf Ahli', 'ruthgabriella_m', 'Anggota/3/Fiqi Nadhratul \'Ulya.jpg', 3, '2024-06-29 05:57:00', '2024-06-29 05:57:00');
 
 INSERT INTO `satuan` (`id`, `slug`, `satuan`, `nama_satuan`, `deskripsi`, `updated_at`, `created_at`) VALUES
 	(2, 'PAO', 'BIRO', 'PEMBERDAYAAN APARATUR ORGANISASI', 'Biro Pemberdayaan Aparatur Organisasi bertanggung jawab secara keseluruhan mengenai internalisasi BEM FISIP UB. Aktif untuk memberdayakan sumber daya manusia yang disebut sebagai aparatur organisasi yang berlandaskan kepada visi, misi, dan nilai melalui', '2024-06-29 03:06:29', '2024-06-06 02:38:55'),
@@ -24,3 +14,15 @@ INSERT INTO `satuan` (`id`, `slug`, `satuan`, `nama_satuan`, `deskripsi`, `updat
 	(15, 'SOSLING', 'KEMENTERIAN', 'SOSIAL DAN LINGKUNGAN', 'Kementerian Sosial dan Lingkungan bertugas untuk mengaktualisasikan fungsi kajian, gerakan serta pengabdian pada lingkup isu sosial-lingkungan guna mewujudkan perbaikan kualitas kesejahteraan sosial, kelestarian lingkungan hidup, serta jiwa sosial mahasiswa FISIP UB.', '2024-06-29 03:18:26', '2024-06-06 03:33:37'),
 	(16, 'SENORA', 'KEMENTERIAN', 'SENI DAN OLAHRAGA', 'Kementerian Ekonomi Kreatif memiliki tugas pokok untuk menjadi fasilitator mahasiswa dalam meningkatkan minat dan kemampuan berwirausaha pada sektor kreatif serta menjadi badan usaha utama dalam menyediakan produk kreatif guna profit operasional organisasi..', '2024-06-29 03:18:50', '2024-06-06 03:33:53'),
 	(17, 'EKRAF', 'KEMENTERIAN', 'EKONOMI KREATIF', 'Bertujuan untuk memfasilitasi minat mahasiswa pada bidang eksplorasi seni dan keolahragaan baik dalam bentuk kompetisi, kajian isu, pendampingan perlombaan dan pementasan guna mendorong aspek kreativitas mahasiswa FISIP.', '2024-06-29 03:19:22', '2024-06-06 03:34:15');
+
+
+INSERT INTO `anggota` (`id`, `nama_anggota`, `status`, `nama_jabatan`, `instagram`, `image_link`, `satuan_id`, `created_at`, `updated_at`) VALUES
+	(1, 'Mahiza Aidan', 'BPH', 'Kepala Biro', NULL, 'Anggota/3/Mahiza Aidan.jpg', 3, '2024-06-20 14:46:38', '2024-06-29 04:38:45'),
+	(2, 'Ilham Rafi Prathama', 'BPH', 'Kepala Bagian Redaksi Publikasi', NULL, 'Anggota/3/Ilham Rafi Prathama.jpg', 3, '2024-06-29 04:40:30', '2024-06-29 04:40:30'),
+	(3, 'Aisha Djody Shanata', 'BPH', 'Kepala Bagian Media Informasi', NULL, 'Anggota/3/Aisha Djody Shanata.jpg', 3, '2024-06-29 04:41:10', '2024-06-29 04:41:10'),
+	(4, 'Rosalia Sanika S.', 'BPH', 'Kepala Bagian Media Kreatif', NULL, 'Anggota/3/Rosalia Sanika Satyawada.jpg', 3, '2024-06-29 04:41:46', '2024-06-29 04:41:46'),
+	(5, 'Cindy Veronika Situmorang', 'STAF', 'Staf Ahli', 'chindyvrnk', 'Anggota/3/Chindy Veronika Situmorang.jpg', 3, '2024-06-29 05:36:05', '2024-06-29 05:36:05'),
+	(6, 'Cinta Ayu Amelia', 'STAF', 'Staf Ahli', 'cintaayuua', 'Anggota/3/Cinta Ayu Amelia.jpg', 3, '2024-06-29 05:37:09', '2024-06-29 05:37:09'),
+	(7, 'Dian Cahyaning Putri', 'STAF', 'Staf Ahli', 'diiannp_', 'Anggota/3/Dian Cahyaning Putri.jpg', 3, '2024-06-29 05:37:46', '2024-06-29 05:37:46'),
+	(8, 'Fiqi Nadhratul \'Ulya', 'STAF', 'Staf Ahli', 'fiqibu', 'Anggota/3/Fiqi Nadhratul \'Ulya.jpg', 3, '2024-06-29 05:38:20', '2024-06-29 05:38:20'),
+	(9, 'Ruth Gabriella Manik', 'STAF', 'Staf Ahli', 'ruthgabriella_m', 'Anggota/3/Fiqi Nadhratul \'Ulya.jpg', 3, '2024-06-29 05:57:00', '2024-06-29 05:57:00');

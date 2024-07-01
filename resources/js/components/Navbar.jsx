@@ -98,7 +98,7 @@ const Navbar = () => {
                     />
                     <NavLink to="/tentang" text="Tentang" />
                     <NavLink to="/mitra" text="Mitra" />
-                    <NavLink to="/" text="Informasi" />
+                    <NavLink to="/artikel" text="Artikel" />
                 </ul>
             </main>
 
@@ -122,65 +122,65 @@ const Navbar = () => {
                                 items: [
                                     {
                                         text: "Biro Kesekretariatan",
-                                        to: "/biro-kesekretariatan",
+                                        to: "/biro/ADKES",
                                     },
                                     {
                                         text: "Biro Keuangan",
-                                        to: "/biro-keuangan",
+                                        to: "/biro/ADKEU",
                                     },
                                     {
                                         text: "Biro Pusat Komunikasi dan Informasi",
-                                        to: "/biro-pusat-kominfo",
+                                        to: "/biro/PUSKOMINFO",
                                     },
                                     {
                                         text: "Biro Pemberdayaan Aparatur Organisasi",
-                                        to: "/biro-pao",
+                                        to: "/biro/pao",
                                     },
                                     {
                                         text: "Kementerian Dalam Negeri",
-                                        to: "/kementerian-dalam-negeri",
+                                        to: "/Kementerian/dagri",
                                     },
                                     {
                                         text: "Kementerian Luar Negeri",
-                                        to: "/kementerian-luar-negeri",
+                                        to: "/Kementerian/lugri",
                                     },
                                     {
                                         text: "Kementerian Pengembangan Sumber Daya Manusia",
-                                        to: "/kementerian-psdm",
+                                        to: "/Kementerian/psdm",
                                     },
                                     {
                                         text: "Kementerian Pengarusutamaan Gender",
-                                        to: "/kementerian-gender",
+                                        to: "/Kementerian/gender",
                                     },
                                     {
                                         text: "Kementerian Sosial dan Lingkungan",
-                                        to: "/kementerian-sosling",
+                                        to: "/Kementerian/sosling",
                                     },
                                     {
                                         text: "Kementerian Kajian dan Aksi Strategis",
-                                        to: "/kementerian-kas",
+                                        to: "/Kementerian/kastrat",
                                     },
                                     {
                                         text: "Kementerian Inovasi dan Karya",
-                                        to: "/kementerian-inovasi-karya",
+                                        to: "/Kementerian/inoya",
                                     },
                                     {
                                         text: "Kementerian Ekonomi Kreatif",
-                                        to: "/kementerian-ekraf",
+                                        to: "/Kementerian/ekraf",
                                     },
                                     {
                                         text: "Kementerian Advokasi dan Kesejahteraan Mahasiswa",
-                                        to: "/kementerian-advokesma",
+                                        to: "/Kementerian/advokesma",
                                     },
                                     {
                                         text: "Kementerian Seni dan Olahraga",
-                                        to: "/kementerian-senor",
+                                        to: "/Kementerian/senora",
                                     },
                                 ],
                             },
                         ]}
                     />
-                    <NavLink to="/" text="Informasi" mobile />
+                    <NavLink to="/" text="Artikel" mobile />
                 </ul>
             </div>
         </nav>

@@ -1,8 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { Head } from "@inertiajs/react";
 const Mitra = () => {
     return (
         <>
+            <Head title="BEM FISIP 2024||Mitra" />
+
             <Navbar />
             <div className="bg-[#F7EDE4] font-inter">
                 <header className="flex  flex-col justify-center w-full lg:h-screen py-20 gap-20 lg:gap-40 items-center">
