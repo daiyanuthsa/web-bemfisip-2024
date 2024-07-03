@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Head } from "@inertiajs/react";
+import Footer from "../components/Footer";
 const Mitra = () => {
     return (
         <>
@@ -224,6 +225,7 @@ const Mitra = () => {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </>
     );
 };

@@ -5,6 +5,7 @@ import pattern from "../../assets/Artikel/pattern.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Head, Link} from "@inertiajs/react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const dummy = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -80,6 +81,7 @@ export default function Artikel({artikels})  {
         </div>
       </section>
     </div>
+    <Footer/>
     </>
   );
 };

@@ -18,12 +18,13 @@ import KASTRAT from "../../assets/Logo/KASTRAT.png";
 import SOSLING from "../../assets/Logo/SOSLING.png";
 import SENORA from "../../assets/Logo/SENORA.png";
 import EKRAF from "../../assets/Logo/EKRAF.png";
+import Footer from "../components/Footer";
 const Organigram = () => {
     return (
         <>
             <Head title="BEM FISIP 2024||Organigram" />
             <Navbar />
-            <div className="bg-[#F7EDE4] font-inter">
+            <div className="bg-[#F7EDE4] font-inter pb-10">
                 <header className="lg:h-screen h-[50vh] overflow-x-hidden flex flex-col items-center justify-center relative w-full">
                     <h1 className="lg:text-7xl md:text-4xl text-2xl text-[#805555] font-black text-center">
                         ORGANIGRAM
@@ -420,6 +421,7 @@ const Organigram = () => {
                     <div className="w-[96vw] lg:w-[95vw] h-[0.3vw] aspect-video  bg-[#4C2C17] flex items-center relative rounded-md left-[50%] translate-y-[0.2vw] -translate-x-1/2"></div>
                 </main>
             </div>
+            <Footer/>
         </>
     );
 };
