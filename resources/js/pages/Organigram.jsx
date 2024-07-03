@@ -2,6 +2,7 @@ import React from "react";
 import dekorasi from "../../assets/Organigram/dekorasi.png";
 import struktur from "../../assets/Logo/Struktur.png";
 import { Head, Link } from "@inertiajs/react";
+import Navbar from "../components/Navbar";
 import Pres from "../../assets/Logo/pres-wapres.png";
 import PAO from "../../assets/Logo/PAO.png";
 import Puskominfo from "../../assets/Logo/PUSKOM.png";
@@ -21,7 +22,7 @@ const Organigram = () => {
     return (
         <>
             <Head title="BEM FISIP 2024||Organigram" />
-
+            <Navbar />
             <div className="bg-[#F7EDE4] font-inter">
                 <header className="lg:h-screen h-[50vh] overflow-x-hidden flex flex-col items-center justify-center relative w-full">
                     <h1 className="lg:text-7xl md:text-4xl text-2xl text-[#805555] font-black text-center">

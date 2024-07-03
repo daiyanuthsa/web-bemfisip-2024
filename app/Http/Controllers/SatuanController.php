@@ -21,6 +21,8 @@ class SatuanController extends Controller
             $bph = $bph->isNotEmpty() ? $bph : null;
         } else {
             $proker = collect(); // Jika tidak ada satuan yang ditemukan, buat koleksi kosong
+            $bph = collect();
+            $staf = collect();
         }
 
         return Inertia::render('Kabinet', [

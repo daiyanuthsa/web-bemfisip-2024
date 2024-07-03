@@ -45,75 +45,99 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         Program Kerja
                     </h1>
                     <main className="flex flex-wrap gap-2 lg:gap-5 text-center justify-center container mx-auto lg:px-16 md:px-10 px-4">
-                        {proker.map((item, i) => (
-                            <p
-                                key={i}
-                                className="md:text-xl text-base lg:text-2xl flex justify-center items-center font-semibold text-white bg-[#CAB9AE] rounded-2xl py-2 px-4 w-full lg:w-[47%]"
-                            >
-                                {item.nama_proker}
-                            </p>
-                        ))}
+                        {proker.length > 0 ? (
+                            proker.map((item, i) => (
+                                <p
+                                    key={i}
+                                    className="md:text-xl text-base lg:text-2xl flex justify-center items-center font-semibold text-white bg-[#CAB9AE] rounded-2xl py-2 px-4 w-full lg:w-[47%]"
+                                >
+                                    {item.nama_proker}
+                                </p>
+                            ))
+                        ) : (
+                            <div className="w-full flex justify-center items-center mt-5">
+                                <p className="md:text-xl text-base lg:text-2xl font-semibold text-black">
+                                    No data
+                                </p>
+                            </div>
+                        )}
                     </main>
                     <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap-reverse justify-center gap-[5%] ">
-                        {bph.map((item, i) => (
-                            <a
-                                href={item.instagram}
-                                target="_blank"
-                                key={i}
-                                className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
-                            >
-                                <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
-                                    <img
-                                        src={
-                                            "http://127.0.0.1:8000/storage/" +
-                                            item.image_link
-                                        }
-                                        alt="img"
-                                        className=" object-cover size-full bg-[#1F3A49] "
-                                        draggable="false"
-                                    />
-                                </div>
-                                <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-2 rounded-3xl py-1  justify-center items-center">
-                                    <h1 className="text-xl font-semibold">
-                                        {item.nama_anggota}
-                                    </h1>
-                                    <p className="text-sm">
-                                        {item.nama_jabatan}
-                                    </p>
-                                </div>
-                            </a>
-                        ))}
+                        {bph ? (
+                            bph.map((item, i) => (
+                                <a
+                                    href={item.instagram}
+                                    target="_blank"
+                                    key={i}
+                                    className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
+                                >
+                                    <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
+                                        <img
+                                            src={
+                                                "http://127.0.0.1:8000/storage/" +
+                                                item.image_link
+                                            }
+                                            alt="img"
+                                            className=" object-cover size-full bg-[#1F3A49] "
+                                            draggable="false"
+                                        />
+                                    </div>
+                                    <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-2 rounded-3xl py-1  justify-center items-center">
+                                        <h1 className="text-xl font-semibold">
+                                            {item.nama_anggota}
+                                        </h1>
+                                        <p className="text-sm">
+                                            {item.nama_jabatan}
+                                        </p>
+                                    </div>
+                                </a>
+                            ))
+                        ) : (
+                            <div className="w-full flex justify-center items-center mt-5">
+                                <p className="text-xl font-semibold text-[#1F3A49]">
+                                    No data
+                                </p>
+                            </div>
+                        )}
                     </div>
 
                     <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap justify-center gap-[2%] ">
-                        {staf.map((item, i) => (
-                            <a
-                                href={item.instagram}
-                                target="_blank"
-                                key={i}
-                                className="md:w-2/5 w-full lg:w-[23%] flex flex-col mt-5"
-                            >
-                                <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
-                                    <img
-                                        src={
-                                            "http://127.0.0.1:8000/storage/" +
-                                            item.image_link
-                                        }
-                                        alt="img"
-                                        className=" object-cover size-full bg-[#1F3A49] "
-                                        draggable="false"
-                                    />
-                                </div>
-                                <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-2 rounded-3xl py-1  justify-center items-center">
-                                    <h1 className="text-xl font-semibold">
-                                        {item.nama_anggota}
-                                    </h1>
-                                    <p className="text-sm">
-                                        {item.nama_jabatan}
-                                    </p>
-                                </div>
-                            </a>
-                        ))}
+                        {staf.length > 0 ? (
+                            staf.map((item, i) => (
+                                <a
+                                    href={item.instagram}
+                                    target="_blank"
+                                    key={i}
+                                    className="md:w-2/5 w-full lg:w-[23%] flex flex-col mt-5"
+                                >
+                                    <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
+                                        <img
+                                            src={
+                                                "http://127.0.0.1:8000/storage/" +
+                                                item.image_link
+                                            }
+                                            alt="img"
+                                            className="object-cover size-full bg-[#1F3A49]"
+                                            draggable="false"
+                                        />
+                                    </div>
+                                    <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-2 rounded-3xl py-1 justify-center items-center">
+                                        <h1 className="text-xl font-semibold">
+                                            {item.nama_anggota}
+                                        </h1>
+                                        <p className="text-sm">
+                                            {item.nama_jabatan}
+                                        </p>
+                                    </div>
+                                </a>
+                            ))
+                        ) : (
+                            <div className="w-full flex justify-center items-center mt-5">
+                                <p className="text-xl font-semibold text-[#1F3A49]">
+                                    No data
+                                </p>
+                            </div>
+                        )}
                     </div>
                 </section>
             </div>
