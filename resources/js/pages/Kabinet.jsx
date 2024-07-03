@@ -4,6 +4,7 @@ import daunkanan from "../../assets/LandingPage/daun.png";
 import daunkiri from "../../assets/LandingPage/daun2.png";
 import Navbar from "../components/Navbar";
 import { Head } from "@inertiajs/react";
+import Footer from "../components/Footer";
 const Kabinet = ({ satuan, proker, bph, staf }) => {
     console.log(satuan);
     console.log(proker);
@@ -66,7 +67,10 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         {bph ? (
                             bph.map((item, i) => (
                                 <a
-                                    href={item.instagram}
+                                    href={
+                                        "https://www.instagram.com/" +
+                                        item.instagram
+                                    }
                                     target="_blank"
                                     key={i}
                                     className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
@@ -82,7 +86,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                             draggable="false"
                                         />
                                     </div>
-                                    <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-2 rounded-3xl py-1  justify-center items-center">
+                                    <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-1 rounded-3xl py-2 justify-center items-center">
                                         <h1 className="text-xl font-semibold">
                                             {item.nama_anggota}
                                         </h1>
@@ -105,7 +109,10 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         {staf.length > 0 ? (
                             staf.map((item, i) => (
                                 <a
-                                    href={item.instagram}
+                                    href={
+                                        "https://www.instagram.com/" +
+                                        item.instagram
+                                    }
                                     target="_blank"
                                     key={i}
                                     className="md:w-2/5 w-full lg:w-[23%] flex flex-col mt-5"
@@ -141,6 +148,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                     </div>
                 </section>
             </div>
+            <Footer />
         </>
     );
 };

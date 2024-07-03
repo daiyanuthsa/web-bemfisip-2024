@@ -9,7 +9,8 @@ use Inertia\Inertia;
 class SatuanController extends Controller
 {
     //
-    public function show($kabinet){
+    public function show($kabinet)
+    {
         $satuan = Satuan::whereRaw('LOWER(slug) = ?', [strtolower($kabinet)])->first();
 
         if ($satuan) {
@@ -18,7 +19,14 @@ class SatuanController extends Controller
             $staf = $satuan->anggotas()->where('status', 'STAF')->get(); // Ambil anggota dengan status STAF
 
             // Atur $bph menjadi null jika tidak ada anggota dengan status BPH
-            $bph = $bph->isNotEmpty() ? $bph : null;
+            if ($bph->isNotEmpty()) {
+                if ($bph->count() == 3) {
+                    $bph = $bph->slice(0, 3); // Ensure we are only working with the first 3 items
+                    $bph = collect([$bph[0], $bph[2], $bph[1]])->merge($bph->slice(3));
+                }
+            } else {
+                $bph = null;
+            }
         } else {
             $proker = collect(); // Jika tidak ada satuan yang ditemukan, buat koleksi kosong
             $bph = collect();
