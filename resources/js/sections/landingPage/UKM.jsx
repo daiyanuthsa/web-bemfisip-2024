@@ -1,80 +1,7 @@
 import React from "react";
 import polkadot from "../../../assets/LandingPage/titikbawah.png";
 import { motion } from "framer-motion";
-
-const data = [
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-  {
-    img: "https://picsum.photos/200/300",
-    nama: "HIMASIGI UB",
-    desc: "Himpunan Mahasiswa Ilmu Sosiologi",
-  },
-
-];
+import LoLso from "../../Data/LoLso";
 
 const UKM = () => {
   return (
@@ -102,7 +29,7 @@ const UKM = () => {
           ease: "linear"
         }}
         className="flex w-fit gap-4 ">
-          {data.map((item, i) => (
+          {LoLso[0].map((item, i) => (
             <div key={i} className="w-52 aspect-square rounded-xl flex flex-col items-center gap-3 p-4  bg-[#5F371E] bg-opacity-30">
               <img
                 src={item.img}
@@ -132,7 +59,7 @@ const UKM = () => {
           ease: "linear"
         }}
         className="flex w-fit gap-4 ">
-          {data.map((item, i) => (
+          {LoLso[1].map((item, i) => (
             <div key={i} className="w-52 aspect-square rounded-xl flex flex-col items-center gap-3 p-4  bg-[#5F371E] bg-opacity-30">
               <img
                 src={item.img}
@@ -159,7 +86,7 @@ const UKM = () => {
               ease: "linear"
             }}
             className="flex w-fit gap-4 ">
-              {data.map((item, i) => (
+              {LoLso[2].map((item, i) => (
                 <div key={i} className="w-52 aspect-square rounded-xl flex flex-col items-center gap-3 p-4  bg-[#5F371E] bg-opacity-30">
                   <img
                     src={item.img}
