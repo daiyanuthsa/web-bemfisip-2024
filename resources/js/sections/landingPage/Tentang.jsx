@@ -24,8 +24,8 @@ const Tentang = () => {
       <div className="w-full flex lg:flex-row flex-col gap-10 relative z-10 ">
         <div className="h-10 w-1/2 bg-gradient-to-r from-white  via-[#006181] to-[#00141B]"></div>
         <div className="lg:w-1/2 text-[#4C2C17] text-left lg:self-auto self-center font-inter flex-col flex justify-center ">
-          <h1 className="w-fit text-2xl lg:text-5xl  ">Our Story</h1>
-          <h1 className="w-fit text-5xl lg:text-7xl font-semibold">Seputar Pijar</h1>
+          <h1 data-aos="fade-left" data-aos-duration="5000" className="w-fit text-2xl lg:text-5xl  ">Our Story</h1>
+          <h1 data-aos="fade-up" data-aos-duration="5000" className="w-fit text-5xl lg:text-7xl font-semibold">Seputar Pijar</h1>
         </div>
       </div>
       <main className="container mx-auto divide-x-0 lg:divide-y-0 divide-y-4 lg:divide-x-4 divide-opacity-60 divide-black py-20 lg:px-16 md:px-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -42,15 +42,15 @@ const Tentang = () => {
                 <div className="w-5 aspect-square rounded-full bg-black absolute lg:right-full right-0 top-0 lg:top-full  translate-x-[45%] lg:-translate-y-full -translate-y-[60%]"></div>
               </>
             ) : null}
-            <h1 className="text-2xl font-bold self-start">{item.title}</h1>
-            <p>{item.desc}</p>
+            <h1 data-aos="fade-left" data-aos-delay={i*300} className="text-2xl font-bold self-start">{item.title}</h1>
+            <p data-aos="fade-up" data-aos-delay={i*200}>{item.desc}</p>
           </div>
         ))}
       </main>
       <div className="flex lg:flex-row flex-col lg:gap-4 justify-end   lg:ms-auto w-full lg:w-fit lg:py-10">
         <div className="flex flex-col lg:w-2/5 gap-3 items-center  font-inter p-5 relative z-10">
-          <h1 className="text-2xl font-bold self-start">Fun Facts</h1>
-          <ol className="list-decimal">
+          <h1 data-aos="fade-left" className="text-2xl font-bold self-start">Fun Facts</h1>
+          <ol data-aos="fade-right" className="list-decimal">
             <li>
               Adanya kementerian baru, yaitu Kementerian Pengarusutamaan Gender
             </li>

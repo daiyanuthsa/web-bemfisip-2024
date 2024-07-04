@@ -1,4 +1,4 @@
-    import React from "react";
+    import React, { useEffect } from "react";
     import { Head } from "@inertiajs/react";
    
     import Hero from "../sections/landingPage/Hero";
@@ -12,8 +12,15 @@
     import PageLayout from "../components/layouts/PageLayout"
     import Navbar from "../components/Navbar";
     import Footer from "../components/Footer";
+    import Aos from "aos";
+    import 'aos/dist/aos.css';
 
     export default function Home() {
+        useEffect(() => {
+            Aos.init({
+          duration:1000
+            });
+          }, []);
         return (
             <>
                 <Head title="BEM FISIP 2024||Home"  />

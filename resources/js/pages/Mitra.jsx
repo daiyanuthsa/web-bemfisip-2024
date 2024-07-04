@@ -225,7 +225,7 @@ const Mitra = () => {
                     </div>
                 </section>
             </div>
-            <Footer/>
+            <Footer bg="bg-[#F7EDE4] "/>
         </>
     );
 };

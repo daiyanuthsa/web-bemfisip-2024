@@ -8,8 +8,8 @@ const Kalender = () => {
       >
           <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-transparent z-0  to-[#588DA9]"></div>
           <div className="text-[#4C2C17] font-inter mx-auto relative z-10 w-fit flex flex-col items-center">
-              <h1 className="text-5xl lg:text-8xl font-semibold">FIMOLY</h1>
-              <p className="text-3xl lg:text-5xl font-medium">
+              <h1 data-aos="fade-right" data-aos-duration="3000" className="text-5xl lg:text-8xl font-semibold">FIMOLY</h1>
+              <p data-aos="fade-up" data-aos-duration="3000" className="text-3xl lg:text-5xl font-medium">
                   FISIP Monthly Activity{" "}
               </p>
           </div>

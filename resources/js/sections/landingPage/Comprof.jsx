@@ -32,10 +32,10 @@ const Comprof = () => {
         />
 
         <div className="lg:w-2/5 text-[#4C2C17] text-balance flex flex-col gap-2  font-inter">
-          <h1 className=" lg:text-5xl text-2xl  font-semibold text-center ">
+          <h1 data-aos="fade-right" className=" lg:text-5xl text-2xl  font-semibold text-center ">
             Company Profile BEM FISIP UB 2024
           </h1>
-          <p className="text-sm w-4/5 mx-auto">Dalam upaya memberikan gambaran yang komprehensif tentang Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Sosial dan Ilmu Politik (FISIP) Universitas Brawijaya (UB) 2024, kami dengan bangga memperkenalkan biro dan kementerian yang menjadi bagian integral dari struktur organisasi kami. Dengan keberadaan biro dan kementerian-kementerian ini, BEM FISIP UB 2024 siap untuk mengimplementasikan visi, misi, dan program-programnya dengan lebih efektif demi meningkatkan kualitas hidup mahasiswa FISIP UB dan kontribusinya terhadap masyarakat.</p>
+          <p data-aos="fade-up" className="text-sm w-4/5 mx-auto">Dalam upaya memberikan gambaran yang komprehensif tentang Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Sosial dan Ilmu Politik (FISIP) Universitas Brawijaya (UB) 2024, kami dengan bangga memperkenalkan biro dan kementerian yang menjadi bagian integral dari struktur organisasi kami. Dengan keberadaan biro dan kementerian-kementerian ini, BEM FISIP UB 2024 siap untuk mengimplementasikan visi, misi, dan program-programnya dengan lebih efektif demi meningkatkan kualitas hidup mahasiswa FISIP UB dan kontribusinya terhadap masyarakat.</p>
         </div>
       </main>
     </section>

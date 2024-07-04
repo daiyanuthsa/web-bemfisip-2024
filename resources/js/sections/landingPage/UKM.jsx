@@ -14,8 +14,8 @@ const UKM = () => {
           draggable="false"
         />
         <div className="flex flex-col w-fit gap-4 font-inter items-center text-[#006181]">
-          <h1 className="text-3xl lg:text-6xl">LKM / LSO</h1>
-          <h1 className="text-6xl lg:text-8xl font-semibold">FISIP UB</h1>
+          <h1 data-aos="fade-right" data-aos-duration="3000" className="text-3xl lg:text-6xl">LKM / LSO</h1>
+          <h1 data-aos="fade-left" data-aos-duration="3000" className="text-6xl lg:text-8xl font-semibold">FISIP UB</h1>
         </div>
       </main>
       <div className="w-full overflow-hidden py-10 font-inter">

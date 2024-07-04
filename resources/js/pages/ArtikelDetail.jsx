@@ -5,6 +5,8 @@ import pattern from "../../assets/Artikel/pattern.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 import { Head } from "@inertiajs/react";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const ArtikelDetail = ({ artikel }) => {
     console.log(artikel);
@@ -34,7 +36,7 @@ const ArtikelDetail = ({ artikel }) => {
     return (
         <>
             <Head title="BEM FISIP 2024||Artikel Detail" />
-
+        <Navbar/>
         <div className="bg-[#F7EDE4] font-inter w-full">
             <header className="relative py-24 lg:py-36 w-full flex flex-col items-start gap-10 lg:gap-24">
                 <img
@@ -85,6 +87,10 @@ const ArtikelDetail = ({ artikel }) => {
                 </div>
             </section>
         </div>
+        <div className="pt-24 bg-[#4A8CAF]">
+    <Footer bg="bg-[#4A8CAF]"/>
+
+    </div>
                         </>
     );
 };

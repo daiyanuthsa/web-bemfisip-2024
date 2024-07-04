@@ -7,7 +7,7 @@ const PageLayout = ({ children }) => {
         <div className="w-full bg-[#F7EDE4]">
             <Navbar />
             {children}
-            <Footer />
+            <Footer bg="bg-[#588DA9]" />
         </div>
     );
 };

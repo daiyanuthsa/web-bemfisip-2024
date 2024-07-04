@@ -16,7 +16,7 @@ export default function Artikel({artikels})  {
     <>
     <Navbar/>
     <Head title="BEM FISIP 2024||Artikel" />
-    <div className="bg-[#F7EDE4] font-inter w-full">
+    <div className="bg-[#F7EDE4] font-inter w-full ">
       <header className="relative lg:h-screen w-full flex flex-col items-start gap-24">
         <img
           src={dekorasi}
@@ -36,10 +36,10 @@ export default function Artikel({artikels})  {
           className="border-x-8 border-y-4 border-[#1F3A49] px-5 py-2 w-fit mx-auto text-base md:text-lg lg:text-2xl font-semibold rounded-2xl"
         />
         <div
-          className=" w-full relative  "
+          className=" w-full relative pb-10 "
           style={{ backgroundImage: `url(${pattern})` }}
         >
-            <div className="size-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-[#4A8CAF] -z-0">
+            <div className="size-full absolute top-0 left-0 bg-gradient-to-b from-transparent to-[#4A8CAF] -z-0 pb-10">
 
             </div>
           <img
@@ -81,7 +81,10 @@ export default function Artikel({artikels})  {
         </div>
       </section>
     </div>
-    <Footer/>
+    <div className="pt-24 bg-[#4A8CAF]">
+    <Footer bg="bg-[#4A8CAF]"/>
+
+    </div>
     </>
   );
 };

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import gedung from "../../assets/Tentang/tentangImage.png";
 import { Head } from "@inertiajs/react";
+import { motion } from "framer-motion";
 const Tentang = () => {
     return (
         <>
@@ -10,15 +11,23 @@ const Tentang = () => {
             <Navbar />
             <div className="bg-[#F7EDE4]">
                 <header className="w-full h-screen flex flex-col justify-center items-center gap-4 font-inter text-[#805555]">
-                    <h3 className="text-7xl font-bold">SEJARAH</h3>
-                    <h1 className="text-8xl w-4/5 mx-auto text-center text-balance font-black">
+                    <h3  data-aos="fade-up" className="text-7xl font-bold">SEJARAH</h3>
+                    <h1 data-aos="fade-up" className="text-8xl w-4/5 mx-auto text-center text-balance font-black">
                         FAKULTAS ILMU SOSIAL DAN POLITIK
                     </h1>
                 </header>
                 <section className=" relative h-screen w-full mt-72">
                     <div className=" w-2/4 h-fit z-10   font-inter     absolute top-1/2 -translate-y-1/2 left-1/3 -translate-x-1/2 ">
                         <div className="  size-full rounded-l-3xl text-sm relative  z-20 ">
-                            <img
+                            <motion.img
+                                animate={{
+                                    scale:[1,1.01,1,0.99,1]
+                                }}
+                                transition={{
+                                    ease:'linear',
+                                    repeat:Infinity,
+                                    duration:5
+                                }}
                                 src={gedung}
                                 alt="img"
                                 className="w-full aspect-auto absolute bottom-1/4 -z-10  left-3/4"

@@ -148,7 +148,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                     </div>
                 </section>
             </div>
-            <Footer />
+            <Footer bg="bg-[#F7EDE4] " />
         </>
     );
 };

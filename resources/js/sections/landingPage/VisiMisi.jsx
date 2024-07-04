@@ -26,6 +26,7 @@ const VisiMisi = () => {
         alt="img"
         draggable="false"
         className="absolute lg:w-auto w-2/5 top-0 -translate-y-1/2 left-0"
+        
       />
       <img
         src={daunkanan}
