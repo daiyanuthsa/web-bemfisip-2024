@@ -31,7 +31,11 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         className="absolute lg:top-1/4 top-[20%] w-2/5 -translate-y-1/2 right-0 translate-x-1/4"
                     />
 
-                    <h1 className="text-[#805555] md:text-6xl text-4xl lg:text-8xl font-bold">
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        className="text-[#805555] md:text-6xl text-4xl lg:text-8xl font-bold"
+                    >
                         {satuan.satuan}
                     </h1>
                     <h3 className="text-[#805555] md:text-2xl text-center text-xl lg:text-3xl font-bold">
@@ -49,6 +53,8 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         {proker.length > 0 ? (
                             proker.map((item, i) => (
                                 <p
+                                    data-aos="fade-up"
+                                    data-aos-duration={800 + (i*100)}
                                     key={i}
                                     className="md:text-xl text-base lg:text-2xl flex justify-center items-center font-semibold text-white bg-[#CAB9AE] rounded-2xl py-2 px-4 w-full lg:w-[47%]"
                                 >
