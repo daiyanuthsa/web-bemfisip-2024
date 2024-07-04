@@ -4,10 +4,18 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [
-        react(), 
+        react(),
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.jsx'],
-            refresh: true,
+            input: ['resources/css/app.css', 'resources/js/app.jsx'],  
+            refresh: false, 
         }),
     ],
+    build: {
+        outDir: 'public/build', 
+        manifest: true,  
+        rollupOptions: {
+            input: ['resources/css/app.css', 'resources/js/app.jsx']                
+            
+        },
+    },
 });
