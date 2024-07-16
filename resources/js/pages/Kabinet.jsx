@@ -38,7 +38,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                     >
                         {satuan.satuan}
                     </h1>
-                    <h3 className="text-[#805555] md:text-2xl text-center text-xl lg:text-3xl font-bold">
+                    <h3
                         className="text-[#805555] md:text-2xl text-center text-xl lg:text-3xl font-bold"
                         data-aos="fade-up"
                         data-aos-duration="1000"
@@ -46,6 +46,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         {satuan.nama_satuan}
                     </h3>
                     <p
+                        className="lg:w-3/5 w-5/6  mx-auto p-5 md:text-lg text-sm text-justify lg:text-xl border-x-2 border-b-2 border-[#805555] rounded-2xl"
                         data-aos="zoom-in-up"
                         data-aos-duration="1000"
                     >
