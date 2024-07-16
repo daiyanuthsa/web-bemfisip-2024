@@ -20,19 +20,24 @@ import EKRAF from "../../assets/Logo/EKRAF.png";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 const Organigram = () => {
-
     return (
         <>
             <Head title="BEM FISIP 2024||Organigram" />
             <Navbar />
             <div className="bg-[#F7EDE4] font-inter pb-10">
                 <header className="lg:h-screen h-[50vh] overflow-x-hidden flex flex-col items-center justify-center relative w-full">
-                    <motion.h1 
-                    
-                    className="lg:text-7xl md:text-4xl text-2xl text-[#805555] font-black text-center">
+                    <motion.h1
+                        className="lg:text-7xl md:text-4xl text-2xl text-[#805555] font-black text-center"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                    >
                         ORGANIGRAM
                     </motion.h1>
-                    <h1 className="lg:text-7xl md:text-4xl text-2xl text-[#805555] font-black text-center">
+                    <h1
+                        className="lg:text-7xl md:text-4xl text-2xl text-[#805555] font-black text-center"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
                         BEM FISIP UB 2024
                     </h1>
                     <img
@@ -53,6 +58,8 @@ const Organigram = () => {
                             className="w-2/5 mx-auto aspect-auto"
                             alt=""
                             draggable="false"
+                            data-aos="zoom-in-up"
+                            data-aos-duration="800"
                         />
                     </div>
                     <h1 className="text-[2vw] w-fit  p-[1.5vw] text-[#006181] flex items-center relative rounded-md left-1/2 -translate-x-1/2">
@@ -68,38 +75,58 @@ const Organigram = () => {
                         <div className="w-[0.3vw] h-[6vw] aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md left-[50%] -translate-y-[0.4vw] -translate-x-1/2"></div>
                     </div>
                     <div className="flex relative">
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[15%] -translate-x-1/2">
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[15%] -translate-x-1/2"
+                            href="biro/pao"
+                        >
                             <img
                                 src={PAO}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1000"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[17%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[17%] -translate-x-1/2"
+                            href="biro/PUSKOMINFO"
+                        >
                             <img
                                 src={Puskominfo}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1200"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[22%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[22%] -translate-x-1/2"
+                            href="biro/ADKES"
+                        >
                             <img
                                 src={ADKES}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1400"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[24%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[24%] -translate-x-1/2"
+                            href="biro/ADKEU"
+                        >
                             <img
                                 src={ADKEU}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1600"
                             />
-                        </div>
+                        </a>
                         <div className="w-[0.3vw] h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md left-[50%] translate-y-[0.4vw] -translate-x-1/2"></div>
                     </div>
 
@@ -170,38 +197,58 @@ const Organigram = () => {
                         <div className="w-[0.3vw] h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md right-[1.7vw] -translate-y-[0.1vw] -translate-x-1/2"></div>
                     </div>
                     <div className="flex relative -translate-y-[1vw]">
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[15%] -translate-x-1/2">
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[15%] -translate-x-1/2"
+                            href="Kementerian/advokesma"
+                        >
                             <img
                                 src={ADVO}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="800"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[17%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[17%] -translate-x-1/2"
+                            href="Kementerian/DAGRI"
+                        >
                             <img
                                 src={DAGRI}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1000"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[22%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[22%] -translate-x-1/2"
+                            href="Kementerian/LUGRI"
+                        >
                             <img
                                 src={LUGRI}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1200"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[24%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[24%] -translate-x-1/2"
+                            href="Kementerian/PSDM"
+                        >
                             <img
                                 src={PSDM}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1400"
                             />
-                        </div>
+                        </a>
                         <div className="w-[0.3vw] h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md left-[2vw] -translate-y-[0.3vw] -translate-x-1/2"></div>
                         <div className="w-[0.3vw] h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md right-[1.7vw] -translate-y-[0.3vw] -translate-x-1/2"></div>
                     </div>
@@ -266,38 +313,58 @@ const Organigram = () => {
                         <div className="w-[0.3vw] h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md right-[1.7vw] -translate-y-[2.5vw] -translate-x-1/2"></div>
                     </div>
                     <div className="flex relative">
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[15%] -translate-x-1/2">
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[15%] -translate-x-1/2"
+                            href="Kementerian/GENDER"
+                        >
                             <img
                                 src={PG}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="800"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[17%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[17%] -translate-x-1/2"
+                            href="Kementerian/INOYA"
+                        >
                             <img
                                 src={INOYA}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1000"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[22%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[22%] -translate-x-1/2"
+                            href="Kementerian/KASTRAT"
+                        >
                             <img
                                 src={KASTRAT}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1200"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[24%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[24%] -translate-x-1/2"
+                            href="Kementerian/SOSLING"
+                        >
                             <img
                                 src={SOSLING}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1400"
                             />
-                        </div>
+                        </a>
                         <div className="w-[0.3vw] h-[20vw] aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md left-[2vw] -translate-y-[2.7vw] -translate-x-1/2"></div>
                         <div className="w-[0.3vw] h-[20vw] aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md right-[1.7vw] -translate-y-[2.7vw] -translate-x-1/2"></div>
                     </div>
@@ -370,22 +437,32 @@ const Organigram = () => {
                         <div className="w-[0.3vw] h-[40vw] aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md right-[1.7vw] -translate-x-1/2 -translate-y-1/2"></div>
                     </div>
                     <div className="flex relative">
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[37%] -translate-x-1/2">
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[37%] -translate-x-1/2"
+                            href="Kementerian/SENORA"
+                        >
                             <img
                                 src={SENORA}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1600"
                             />
-                        </div>
-                        <div className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[42%] -translate-x-1/2">
+                        </a>
+                        <a
+                            className="w-[20vw] aspect-video p-4 bg-[#006181] hover:bg-[#1f4c5c] transition-colors duration-200 flex items-center relative rounded-md left-[42%] -translate-x-1/2"
+                            href="Kementerian/EKRAF"
+                        >
                             <img
                                 src={EKRAF}
                                 className="w-2/5 mx-auto aspect-auto"
                                 alt=""
                                 draggable="false"
+                                data-aos="zoom-in-up"
+                                data-aos-duration="1800"
                             />
-                        </div>
+                        </a>
                         <div className="w-[0.3vw]  h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md left-[2vw]  -translate-x-1/2 -translate-y-1/2"></div>
                         <div className="w-[0.3vw]  h-full aspect-video  bg-[#4C2C17] flex items-center absolute rounded-md right-[1.7vw] -translate-x-1/2 -translate-y-1/2"></div>
                     </div>
@@ -424,7 +501,7 @@ const Organigram = () => {
                     <div className="w-[96vw] lg:w-[95vw] h-[0.3vw] aspect-video  bg-[#4C2C17] flex items-center relative rounded-md left-[50%] translate-y-[0.2vw] -translate-x-1/2"></div>
                 </main>
             </div>
-            <Footer bg="bg-[#F7EDE4]"/>
+            <Footer bg="bg-[#F7EDE4]" />
         </>
     );
 };

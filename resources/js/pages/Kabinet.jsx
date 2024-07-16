@@ -39,9 +39,16 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         {satuan.satuan}
                     </h1>
                     <h3 className="text-[#805555] md:text-2xl text-center text-xl lg:text-3xl font-bold">
+                        className="text-[#805555] md:text-2xl text-center text-xl lg:text-3xl font-bold"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                    >
                         {satuan.nama_satuan}
                     </h3>
-                    <p className="lg:w-3/5 w-5/6  mx-auto p-5 md:text-lg text-sm lg:text-xl border-x-2 border-b-2 border-[#805555] rounded-2xl">
+                    <p
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1000"
+                    >
                         {satuan.deskripsi}
                     </p>
                 </header>
@@ -54,7 +61,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                             proker.map((item, i) => (
                                 <p
                                     data-aos="fade-up"
-                                    data-aos-duration={800 + (i*100)}
+                                    data-aos-duration={800 + i * 100}
                                     key={i}
                                     className="md:text-xl text-base lg:text-2xl flex justify-center items-center font-semibold text-white bg-[#CAB9AE] rounded-2xl py-2 px-4 w-full lg:w-[47%]"
                                 >
@@ -63,7 +70,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                             ))
                         ) : (
                             <div className="w-full flex justify-center items-center mt-5">
-                                <p className="md:text-xl text-base lg:text-2xl font-semibold text-black">
+                                <p className="md:text-xl  text-base lg:text-2xl font-semibold text-black">
                                     No data
                                 </p>
                             </div>
@@ -77,6 +84,8 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                         "https://www.instagram.com/" +
                                         item.instagram
                                     }
+                                    data-aos="fade-up"
+                                    data-aos-duration={800 + i * 100}
                                     target="_blank"
                                     key={i}
                                     className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
@@ -84,7 +93,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
                                         <img
                                             src={
-                                                "http://127.0.0.1:8000/storage/" +
+                                                "https://bem.fisip.ub.ac.id/storage/" +
                                                 item.image_link
                                             }
                                             alt="img"
@@ -119,6 +128,8 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                         "https://www.instagram.com/" +
                                         item.instagram
                                     }
+                                    data-aos="fade-up"
+                                    data-aos-duration={800 + i * 400}
                                     target="_blank"
                                     key={i}
                                     className="md:w-2/5 w-full lg:w-[23%] flex flex-col mt-5"
@@ -126,7 +137,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
                                         <img
                                             src={
-                                                "http://127.0.0.1:8000/storage/" +
+                                                "https://bem.fisip.ub.ac.id/storage/" +
                                                 item.image_link
                                             }
                                             alt="img"
