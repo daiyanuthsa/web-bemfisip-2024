@@ -25,7 +25,7 @@ const Hero = () => {
                       duration: 0.5,
                   },
               }}
-              className="lg:text-8xl md:text-5xl text-4xl text-center font-alfa-slab font-black relative z-10 "
+              className="lg:text-8xl md:text-5xl text-4xl text-center font-alfa-slab font-black tracking-wide relative z-10 "
           >
               BEM FISIP UB 2024
           </motion.h1>

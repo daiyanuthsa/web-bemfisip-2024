@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import daunkanan from "../../assets/LandingPage/daun.png";
 import daunkiri from "../../assets/LandingPage/daun2.png";
@@ -11,6 +11,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
     console.log(bph);
     console.log(staf);
     const { nama } = useParams();
+    const appUrl = import.meta.env.VITE_APP_URL;
     return (
         <>
             <Head title={`BEM FISIP 2024||${satuan.slug}`} />
@@ -94,7 +95,8 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
                                         <img
                                             src={
-                                                "https://bem.fisip.ub.ac.id/storage/" +
+                                                appUrl +
+                                                "storage/" +
                                                 item.image_link
                                             }
                                             alt="img"
@@ -138,7 +140,8 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
                                         <img
                                             src={
-                                                "https://bem.fisip.ub.ac.id/storage/" +
+                                                appUrl +
+                                                "storage/" +
                                                 item.image_link
                                             }
                                             alt="img"
