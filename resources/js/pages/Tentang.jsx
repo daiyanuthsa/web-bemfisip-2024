@@ -11,26 +11,50 @@ const Tentang = () => {
             <Navbar />
             <div className="bg-[#F7EDE4]">
                 <header className="w-full h-screen flex flex-col justify-center items-center gap-4 font-inter text-[#805555]">
-                    <h3  data-aos="fade-up" className="text-7xl font-bold">SEJARAH</h3>
-                    <h1 data-aos="fade-up" className="text-8xl w-4/5 mx-auto text-center text-balance font-black">
+                    <h3
+                        data-aos="fade-up"
+                        className="text-2xl lg:text-7xl font-bold"
+                    >
+                        SEJARAH
+                    </h3>
+                    <h1
+                        data-aos="fade-up"
+                        className="text-4xl lg:text-8xl w-4/5 mx-auto text-center text-balance font-black"
+                    >
                         FAKULTAS ILMU SOSIAL DAN POLITIK
                     </h1>
                 </header>
-                <section className=" relative h-screen w-full mt-72">
-                    <div className=" w-2/4 h-fit z-10   font-inter     absolute top-1/2 -translate-y-1/2 left-1/3 -translate-x-1/2 ">
-                        <div className="  size-full rounded-l-3xl text-sm relative  z-20 ">
+                <div className="lg:hidden w-full flex justify-center mt-5">
+                    <motion.img
+                        animate={{
+                            scale: [1, 1.01, 1, 0.99, 1],
+                        }}
+                        transition={{
+                            ease: "linear",
+                            repeat: Infinity,
+                            duration: 5,
+                        }}
+                        src={gedung}
+                        alt="img"
+                        className="w-4/5"
+                        draggable="false"
+                    />
+                </div>
+                <section className="w-full mt-20 lg:mt-72 lg:mb-20">
+                    <div className="w-full lg:w-2/4 h-fit z-10 font-inter mx-auto p-4 lg:relative lg:top-1/2 lg:-translate-y-1/6  lg:-translate-x-1/4">
+                        <div className="size-full rounded-l-3xl text-sm relative z-20">
                             <motion.img
                                 animate={{
-                                    scale:[1,1.01,1,0.99,1]
+                                    scale: [1, 1.01, 1, 0.99, 1],
                                 }}
                                 transition={{
-                                    ease:'linear',
-                                    repeat:Infinity,
-                                    duration:5
+                                    ease: "linear",
+                                    repeat: Infinity,
+                                    duration: 5,
                                 }}
                                 src={gedung}
                                 alt="img"
-                                className="w-full aspect-auto absolute bottom-1/4 -z-10  left-3/4"
+                                className="hidden lg:block w-full aspect-auto absolute lg:bottom-1/4 -z-10 lg:left-3/4"
                                 draggable="false"
                             />
                             <div className="bg-[#FCEDE0] text-[#4C2C17] size-full p-10 flex flex-col gap-4">
@@ -52,7 +76,6 @@ const Tentang = () => {
                                     Program Studi Ilmu Sosial.
                                 </p>
                                 <p>
-                                    {" "}
                                     Berdasarkan keahlian yang dimiliki tersebut,
                                     kemudian Rektor menawarkan untuk mendirikan
                                     atau membuka fakultas baru di Universitas
@@ -70,7 +93,6 @@ const Tentang = () => {
                                     pendirian FISIP tersebut.
                                 </p>
                                 <p>
-                                    {" "}
                                     Berdasarkan kesepakatan mendirikan FISIP,
                                     kemudian dilakukan pertemuan bertiga
                                     (Rektor, PR I dan Darsono,WS) di ruang
@@ -89,11 +111,11 @@ const Tentang = () => {
                                 </p>
                             </div>
                         </div>
-
-                        <div className="bg-[#805555]   font-inter size-full  rounded-l-3xl flex flex-col gap-4 absolute -z0 bottom-10 right-10"></div>
+                        <div className="bg-[#805555]  font-inter size-full rounded-l-3xl flex flex-col gap-4 absolute lg:bottom-10 lg:right-10 bottom-2 right-2"></div>
                     </div>
                 </section>
             </div>
+            <Footer />
         </>
     );
 };

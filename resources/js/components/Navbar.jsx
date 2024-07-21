@@ -180,7 +180,7 @@ const Navbar = () => {
                             },
                         ]}
                     />
-                    <NavLink to="/" text="Artikel" mobile />
+                    <NavLink to="/artikel" text="Artikel" mobile />
                 </ul>
             </div>
         </nav>
