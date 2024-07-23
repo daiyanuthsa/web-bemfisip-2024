@@ -18,6 +18,7 @@ class Anggota extends Model
         'nama_jabatan',
         'instagram',
         'image_link',
+        'image_link2',
         'satuan_id',
     ];
 

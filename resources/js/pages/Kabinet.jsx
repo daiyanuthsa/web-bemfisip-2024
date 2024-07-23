@@ -35,7 +35,7 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                     <h1
                         data-aos="fade-up"
                         data-aos-duration="800"
-                        className="text-[#805555] md:text-6xl text-4xl lg:text-8xl font-bold"
+                        className="text-[#805555] md:text-6xl text-4xl lg:text-8xl mt-12 font-bold"
                     >
                         {satuan.satuan}
                     </h1>

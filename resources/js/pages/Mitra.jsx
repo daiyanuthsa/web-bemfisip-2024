@@ -5,12 +5,12 @@ import Footer from "../components/Footer";
 const Mitra = () => {
     return (
         <>
-            <Head title="BEM FISIP 2024||Mitra" />
+            <Head title="BEM FISIP 2024 || Mitra" />
 
             <Navbar />
             <div className="bg-[#F7EDE4] font-inter">
                 <header className="flex  flex-col justify-center w-full lg:h-screen py-20 gap-20 lg:gap-40 items-center">
-                    <h1 className="py-4 px-6 lg:px-20 text-xl text-center lg:text-5xl font-bold bg-[#006181] text-[#F7EDE4]  w-fit rounded-3xl mx-auto">
+                    <h1 className="py-4 px-6 lg:px-20 text-xl text-center lg:text-5xl font-bold bg-[#006181] text-[#F7EDE4]  w-fit rounded-3xl mt-12 mx-auto">
                         MEDIA PARTNER
                     </h1>
                     <main className="container text-sm md:text-base lg:text-lg mx-aut0 lg:px-24 md:px-10 px-4 grid-cols-1 grid md:grid-cols-3 gap-20 lg:gap-5">
@@ -225,7 +225,7 @@ const Mitra = () => {
                     </div>
                 </section>
             </div>
-            <Footer bg="bg-[#F7EDE4] "/>
+            <Footer bg="bg-[#F7EDE4] " />
         </>
     );
 };

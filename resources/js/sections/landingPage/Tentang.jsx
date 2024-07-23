@@ -72,7 +72,7 @@ const Tentang = () => {
               ))}
           </main>
           <div className="flex lg:flex-row flex-col lg:gap-4 justify-end   lg:ms-auto w-full lg:w-fit lg:py-10">
-              <div className="flex flex-col lg:w-2/5 gap-3 items-center  font-inter p-5 relative z-10">
+              <div className="flex flex-col lg:w-2/5 gap-3 items-center  font-inter ps-10 p-5 relative z-10">
                   <h1
                       data-aos="fade-left"
                       className="text-2xl font-bold self-start"

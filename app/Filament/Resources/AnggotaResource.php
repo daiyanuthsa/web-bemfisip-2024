@@ -22,7 +22,7 @@ class AnggotaResource extends Resource
 
     public static function form(Form $form): Form
     {
-        
+
         return $form
             ->schema([
                 Forms\Components\TextInput::make('nama_anggota')
@@ -36,12 +36,12 @@ class AnggotaResource extends Resource
                         'STAF' => 'STAF',
                     ])->reactive()
                     ->afterStateUpdated(fn($state, callable $set) => $state === 'STAF' ? $set('nama_jabatan', 'Staf Ahli') : $set('nama_jabatan', ''))
-                    ,
+                ,
                 Forms\Components\TextInput::make('nama_jabatan')
                     ->required()
                     ->maxLength(255)
                     ->reactive(), // Make this field reactive as well
-                    // ->default(fn(callable $get) => $get('status') === 'STAF' ? 'Staf Ahli' : null), // Set default based on status,
+                // ->default(fn(callable $get) => $get('status') === 'STAF' ? 'Staf Ahli' : null), // Set default based on status,
                 Forms\Components\TextInput::make('instagram')
                     ->maxLength(255),
                 Forms\Components\Select::make('satuan_id')
@@ -49,6 +49,7 @@ class AnggotaResource extends Resource
                     ->options(Satuan::all()->pluck('nama_satuan', 'id'))
                     ->default(Anggota::latest('updated_at')->first()->satuan_id),
                 Forms\Components\FileUpload::make('image_link')
+                    ->label('Sisi Pertama')
                     ->required()
                     ->image()
                     ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg'])
@@ -64,7 +65,23 @@ class AnggotaResource extends Resource
                     ->panelLayout('compact')
                     ->removeUploadedFileButtonPosition('right') // Tombol hapus file
                     ->preserveFilenames(),
-                
+                Forms\Components\FileUpload::make('image_link2')
+                    ->label('Sisi Kedua')
+                    ->image()
+                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg'])
+                    ->disk('public')
+                    ->directory(function (callable $get) {
+                        $satuanId = $get('satuan_id');
+                        return $satuanId ? "Anggota/{$satuanId}/secondSide" : 'Anggota/';
+                    })
+                    ->visibility('public')
+                    ->columnSpanFull()
+                    ->imagePreviewHeight('250')
+                    ->loadingIndicatorPosition('left')
+                    ->panelLayout('compact')
+                    ->removeUploadedFileButtonPosition('right') // Tombol hapus file
+                    ->preserveFilenames(),
+
             ]);
     }
 
