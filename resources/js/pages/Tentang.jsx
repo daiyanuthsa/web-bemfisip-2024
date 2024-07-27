@@ -24,7 +24,7 @@ const Tentang = () => {
                         FAKULTAS ILMU SOSIAL DAN POLITIK
                     </h1>
                 </header>
-                <div className="lg:hidden w-full flex justify-center mt-5">
+                <div className="-translate-y-1/6 lg:hidden w-full flex justify-center mt-5 ">
                     <motion.img
                         animate={{
                             scale: [1, 1.01, 1, 0.99, 1],
@@ -36,11 +36,11 @@ const Tentang = () => {
                         }}
                         src={gedung}
                         alt="img"
-                        className="w-4/5"
+                        className="w-4/5 "
                         draggable="false"
                     />
                 </div>
-                <section className="w-full mt-20 lg:mt-72 lg:mb-20">
+                <section className="w-full mt-20 lg:mt-72 pb-10">
                     <div className="w-full lg:w-2/4 h-fit z-10 font-inter mx-auto p-4 lg:relative lg:top-1/2 lg:-translate-y-1/6  lg:-translate-x-1/4">
                         <div className="size-full rounded-l-3xl text-sm relative z-20">
                             <motion.img
@@ -58,7 +58,7 @@ const Tentang = () => {
                                 draggable="false"
                             />
                             <div className="bg-[#FCEDE0] text-[#4C2C17] size-full p-10 flex flex-col gap-4">
-                                <p>
+                                <p className="text-justify indent-6 mb-4">
                                     Berdirinya Fakultas Ilmu Sosial dan Ilmu
                                     Politik ini, bermula dari Pertemuan antara
                                     Rektor Universtas Brawijaya yang saat itu
@@ -75,7 +75,7 @@ const Tentang = () => {
                                     sebagai doktor di bidang sosiologi pada
                                     Program Studi Ilmu Sosial.
                                 </p>
-                                <p>
+                                <p className="text-justify indent-6 mb-4">
                                     Berdasarkan keahlian yang dimiliki tersebut,
                                     kemudian Rektor menawarkan untuk mendirikan
                                     atau membuka fakultas baru di Universitas
@@ -92,7 +92,7 @@ const Tentang = () => {
                                     untuk membantu secara penuh rencana
                                     pendirian FISIP tersebut.
                                 </p>
-                                <p>
+                                <p className="text-justify indent-6 mb-4">
                                     Berdasarkan kesepakatan mendirikan FISIP,
                                     kemudian dilakukan pertemuan bertiga
                                     (Rektor, PR I dan Darsono,WS) di ruang
@@ -111,11 +111,11 @@ const Tentang = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-[#805555]  font-inter size-full rounded-l-3xl flex flex-col gap-4 absolute lg:bottom-10 lg:right-10 bottom-2 right-2"></div>
+                        <div className="bg-[#805555] hidden lg:block  font-inter size-full rounded-l-3xl flex flex-col gap-4 absolute lg:bottom-10 lg:right-10 bottom-2 right-2"></div>
                     </div>
                 </section>
             </div>
-            <Footer />
+            <Footer bg="bg-[#F7EDE4]" />
         </>
     );
 };

@@ -24,8 +24,9 @@ const loadingScreenStyles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 1000,
-    transition: "transform 1s ease-in-out",
+    transition: "opacity 0.8s ease-in-out", // Set transition for opacity
+    opacity: 1, // Initial opacity
+    zIndex: 1000, // Ensure the loading screen is on top
     flexDirection: "column",
 };
 
@@ -33,7 +34,7 @@ const welcomeMessageStyles = {
     textAlign: "center",
 };
 
-export default function Home() {
+export default function Home({ artikels }) {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -61,9 +62,8 @@ export default function Home() {
                 <div
                     style={{
                         ...loadingScreenStyles,
-                        transform: isLoading
-                            ? "translateY(0)"
-                            : "translateY(-100%)",
+                        opacity: isLoading ? 1 : 0, // Change opacity based on isLoading
+                        pointerEvents: isLoading ? "all" : "none", // Prevent interaction when hidden
                     }}
                 >
                     <div style={welcomeMessageStyles}>
@@ -71,25 +71,11 @@ export default function Home() {
                             <img
                                 src={Logo}
                                 alt="logo-img"
-                                className="w-1/6 lg:w-1/3 md:w-1/6 aspect-auto"
+                                className="w-1/6 lg:w-1/2 md:w-1/3 aspect-auto"
                                 draggable="false"
                                 data-aos="zoom-in-up"
-                               
                             />
                         </div>
-
-                        <h1
-                            className="lg:text-8xl md:text-5xl text-4xl text-center font-alfa-slab text-orange-950"
-                            data-aos="fade-up"
-                        >
-                            BEM FISIP UB 2024
-                        </h1>
-                        <h1
-                            className="lg:text-5xl md:text-2xl text-lg font-bold font-inter italic text-orange-950"
-                            data-aos="fade-up"
-                        >
-                            Kabinet Pijaraksana
-                        </h1>
                     </div>
                 </div>
             </CSSTransition>
@@ -100,7 +86,7 @@ export default function Home() {
                     <VisiMisi />
                     <Comprof />
                     <Tentang />
-                    <Artikel />
+                    <Artikel artikels={artikels} />
                     <UKM />
                     <Kalender />
                 </PageLayout>

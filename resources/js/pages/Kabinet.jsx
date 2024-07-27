@@ -1,17 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import daunkanan from "../../assets/LandingPage/daun.png";
 import daunkiri from "../../assets/LandingPage/daun2.png";
 import Navbar from "../components/Navbar";
 import { Head } from "@inertiajs/react";
 import Footer from "../components/Footer";
+import FlipCard from "../sections/satuan/flipImage";
+
+
 const Kabinet = ({ satuan, proker, bph, staf }) => {
-    console.log(satuan);
-    console.log(proker);
-    console.log(bph);
-    console.log(staf);
     const { nama } = useParams();
     const appUrl = import.meta.env.VITE_APP_URL;
+
+     const [isFlipped, setIsFlipped] = useState(false);
+     const [isDelayActive, setIsDelayActive] = useState(false);
+
+     function flipCard() {
+         if (isDelayActive) return; // Prevent flipping if delay is active
+
+         setIsFlipped(!isFlipped);
+         setIsDelayActive(true);
+
+         setTimeout(() => {
+             setIsDelayActive(false);
+         }, 500); // 1 second delay
+     }
+
     return (
         <>
             <Head title={`BEM FISIP 2024||${satuan.slug}`} />
@@ -90,20 +104,20 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     data-aos-duration={800 + i * 100}
                                     target="_blank"
                                     key={i}
-                                    className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5"
+                                    className="md:w-2/5 w-full lg:w-1/4 flex flex-col mt-5 flip-container"
                                 >
-                                    <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
-                                        <img
-                                            src={
-                                                appUrl +
-                                                "storage/" +
-                                                item.image_link
-                                            }
-                                            alt="img"
-                                            className=" object-cover size-full bg-[#1F3A49] "
-                                            draggable="false"
-                                        />
-                                    </div>
+                                    <FlipCard
+                                        imageLink={
+                                            appUrl +
+                                            "storage/" +
+                                            item.image_link
+                                        }
+                                        imageLink2={
+                                            appUrl +
+                                            "storage/" +
+                                            item.image_link2
+                                        }
+                                    />
                                     <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-1 rounded-3xl py-2 justify-center items-center">
                                         <h1 className="text-xl font-semibold">
                                             {item.nama_anggota}
@@ -137,18 +151,18 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                                     key={i}
                                     className="md:w-2/5 w-full lg:w-[23%] flex flex-col mt-5"
                                 >
-                                    <div className="w-[90%] mx-auto aspect-[9/11] rounded-t-2xl overflow-hidden">
-                                        <img
-                                            src={
-                                                appUrl +
-                                                "storage/" +
-                                                item.image_link
-                                            }
-                                            alt="img"
-                                            className="object-cover size-full bg-[#1F3A49]"
-                                            draggable="false"
-                                        />
-                                    </div>
+                                    <FlipCard
+                                        imageLink={
+                                            appUrl +
+                                            "storage/" +
+                                            item.image_link
+                                        }
+                                        imageLink2={
+                                            appUrl +
+                                            "storage/" +
+                                            item.image_link2
+                                        }
+                                    />
                                     <div className="w-full bg-[#D9D9D9] text-[#1F3A49] flex flex-col gap-2 rounded-3xl py-1 justify-center items-center">
                                         <h1 className="text-xl font-semibold">
                                             {item.nama_anggota}

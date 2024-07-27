@@ -46,8 +46,8 @@ const Mitra = () => {
                     <h1 className="py-4  px-20 text-[#006181] text-xl lg:text-5xl font-bold   w-fit rounded-3xl mx-auto">
                         KETENTUAN
                     </h1>
-                    <div className="w-full  bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal text-sm md:text-base flex flex-col gap-3">
+                    <div className="w-full   bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
+                        <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3">
                             <li>
                                 Pihak yang mengajukan kerjasama harus memberikan
                                 20 followers untuk akun Instagram @bemfisipub
@@ -89,8 +89,8 @@ const Mitra = () => {
                     <h1 className="py-4 text-xl px-6 lg:px-20 lg:text-5xl font-bold bg-[#006181] text-[#F7EDE4]    w-fit rounded-3xl mx-auto">
                         PARTNERSHIP
                     </h1>
-                    <div className="w-full  bg-transparent border-x-2 border-b-2 flex mt-10   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal md:text-base text-sm flex flex-col gap-3">
+                    <div className="w-full bg-transparent border-x-2 border-b-2 flex mt-10   items-center border-[#006181] relative p-10 rounded-2xl">
+                        <ul className="list-decimal md:text-base text-sm lg:text-lg flex flex-col gap-3">
                             <li>
                                 Pihak yang mengajukan kerjasama diharuskan untuk
                                 memperhatikan serta mematuhi ketentuan yang
@@ -116,7 +116,7 @@ const Mitra = () => {
                         KETENTUAN
                     </h1>
                     <div className="w-full  bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal flex flex-col gap-3">
+                        <ul className="list-decimal md:text-base text-sm lg:text-lg flex flex-col gap-3">
                             <li>
                                 Pihak yang menawarkan kerjasama dapat
                                 menghubungi nomor penanggungjawab pada jam
@@ -142,8 +142,8 @@ const Mitra = () => {
                                 ada.
                             </li>
                         </ul>
-                        <h1 className="lg:text-4xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-20 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung :
+                        <h1 className="lg:text-3xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
+                            Narahubung : 081288448951 ( Hansen )
                         </h1>
                     </div>
                 </section>
@@ -151,8 +151,8 @@ const Mitra = () => {
                     <h1 className="py-4 px-6 lg:px-20 text-xl lg:text-5xl font-bold bg-[#006181] text-[#F7EDE4]    w-fit rounded-3xl mx-auto">
                         VISITASI & KUNJUNGAN
                     </h1>
-                    <div className="w-full  bg-transparent border-x-2 border-b-2 flex mt-10   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal text-sm md:text-base flex flex-col gap-3">
+                    <div className="w-full text-lg bg-transparent border-x-2 border-b-2 flex mt-10   items-center border-[#006181] relative p-10 rounded-2xl">
+                        <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3">
                             <li>
                                 Surat undangan/pengajuan kunjungan dikirim
                                 melalui narahubung visitasi/kunjungan yang
@@ -185,14 +185,14 @@ const Mitra = () => {
                                 tercantum di IG BEM FISIP UB.
                             </li>
                         </ul>
-                        <h1 className="lg:text-4xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-20 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung :
+                        <h1 className="lg:text-3xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
+                            Narahubung : 081280881357 (Haidar)
                         </h1>
                     </div>
                     <h1 className="py-4  text-[#006181] px-20 text-xl lg:text-5xl font-bold mt-10   w-fit rounded-3xl mx-auto">
                         KETENTUAN
                     </h1>
-                    <div className="w-full  bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
+                    <div className="w-full text-lg bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
                         <ul className="list-decimal flex flex-col gap-3">
                             <li>
                                 Surat atau undangan dikirim melalui email
@@ -206,7 +206,7 @@ const Mitra = () => {
                                 yaitu:
                                 <ul>
                                     <li>LINE: divajpg/</li>
-                                    <li>WA: 082336136546 (Nadiva Sayyida)</li>
+                                    <li>WA: 081288448951 ( Hansen )</li>
                                 </ul>
                             </li>
                             <li>
@@ -219,8 +219,8 @@ const Mitra = () => {
                                 lambat H-2 sebelum kegiatan berlangsung
                             </li>
                         </ul>
-                        <h1 className="lg:text-4xl text-xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-20 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung :
+                        <h1 className="lg:text-3xl text-xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
+                            Narahubung : 081288448951 ( Hansen )
                         </h1>
                     </div>
                 </section>

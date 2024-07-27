@@ -2,12 +2,11 @@
 
 use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\SatuanController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Home');
-});
+Route::get('/', [HomeController::class, 'show']);
 Route::get('/tentang', function () {
     return Inertia::render('Tentang');
 });
