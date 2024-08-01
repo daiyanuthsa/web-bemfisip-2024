@@ -16,6 +16,7 @@
         "vite": "^5.0"
     },
     "dependencies": {
+        "@hotjar/browser": "^1.0.9",
         "@inertiajs/inertia-react": "^0.8.1",
         "@inertiajs/react": "^1.2.0",
         "@splidejs/react-splide": "^0.7.12",
