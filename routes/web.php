@@ -20,3 +20,8 @@ Route::get('/mitra', function () {
 });
 Route::get('/artikel', [ArtikelController::class, 'index']);
 Route::get('/artikel/{id}', [ArtikelController::class, 'show']);
+
+// Wildcard Route (404 page)
+Route::fallback(function () {
+    return Inertia::render('Error');
+});

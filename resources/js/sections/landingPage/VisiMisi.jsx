@@ -17,28 +17,28 @@ const dataMobile = [slide1mobile, slide2mobile, slide3mobile];
 const VisiMisi = ({ scrollSpeed = 1 }) => {
     const splideRef = useRef(null);
 
-    useEffect(() => {
-        const handleWheel = (event) => {
-            event.preventDefault();
-            const splide = splideRef.current?.splide;
-            if (!splide) return;
+    // useEffect(() => {
+    //     const handleWheel = (event) => {
+    //         event.preventDefault();
+    //         const splide = splideRef.current?.splide;
+    //         if (!splide) return;
 
-            const delta = Math.sign(event.deltaY);
-            const slideBy = delta * scrollSpeed;
-            splide.go(`>${slideBy}`);
-        };
+    //         const delta = Math.sign(event.deltaY);
+    //         const slideBy = delta * scrollSpeed;
+    //         splide.go(`>${slideBy}`);
+    //     };
 
-        const splideElement = splideRef.current?.splide.root;
-        if (splideElement) {
-            splideElement.addEventListener("wheel", handleWheel);
-        }
+    //     const splideElement = splideRef.current?.splide.root;
+    //     if (splideElement) {
+    //         splideElement.addEventListener("wheel", handleWheel);
+    //     }
 
-        return () => {
-            if (splideElement) {
-                splideElement.removeEventListener("wheel", handleWheel);
-            }
-        };
-    }, [scrollSpeed]);
+    //     return () => {
+    //         if (splideElement) {
+    //             splideElement.removeEventListener("wheel", handleWheel);
+    //         }
+    //     };
+    // }, [scrollSpeed]);
 
     return (
         <section className="bg-gradient-to-b mt-20 from-[#F0E5DB] py-10 lg:py-40 from-0% relative flex justify-center items-center via-white via-50% to-[#F0E5DB] to-100%">
@@ -58,8 +58,9 @@ const VisiMisi = ({ scrollSpeed = 1 }) => {
                 <Splide
                     ref={splideRef}
                     options={{
-                        arrows: false,
+                        arrows: true,
                         drag: true,
+                        // type: "loop",
                     }}
                     aria-label="My Favorite Images"
                     className={"lg:block hidden"}

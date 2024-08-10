@@ -14,8 +14,8 @@ const Mitra = () => {
                         MEDIA PARTNER
                     </h1>
                     <main className="container text-sm md:text-base lg:text-lg mx-aut0 lg:px-24 md:px-10 px-4 grid-cols-1 grid md:grid-cols-3 gap-20 lg:gap-5">
-                        <div className="w-full  bg-transparent border-x-2 border-b-2 flex  items-center border-[#006181] relative p-5 rounded-2xl">
-                            <div className="text-[#F7EDE4] bg-[#006181] font-bold text-xl lg:text-4xl absolute w-2/5 lg:w-3/5 aspect-video flex justify-center items-center rounded-2xl top-5 -translate-y-full left-0 lg:-translate-x-1/3">
+                        <div className="w-full  bg-transparent border-x-2 border-b-2 flex  items-center border-[#006181] relative p-5 rounded-2xl text-justify">
+                            <div className="text-[#F7EDE4] bg-[#006181] font-bold text-xl lg:text-4xl absolute w-1/3 lg:w-3/5 aspect-video flex justify-center items-center rounded-2xl top-5 -translate-y-110 left-0 lg:-translate-x-1/3">
                                 1
                             </div>
                             Pengajuan kerjasama publikasi/ Media Partnership
@@ -25,16 +25,16 @@ const Mitra = () => {
                             organisasi-organisasi nirlaba di luar lingkup
                             Universitas Brawijaya.
                         </div>
-                        <div className="w-full  bg-transparent border-x-2 border-b-2 flex  items-center border-[#006181] relative p-5 rounded-2xl">
-                            <div className="text-[#F7EDE4] bg-[#006181] font-bold text-xl lg:text-4xl absolute w-2/5 lg:w-3/5 aspect-video flex justify-center items-center rounded-2xl top-5 -translate-y-full left-0 lg:-translate-x-1/3">
+                        <div className="w-full  bg-transparent border-x-2 border-b-2 flex  items-center border-[#006181] relative p-5 rounded-2xl text-justify">
+                            <div className="text-[#F7EDE4] bg-[#006181] font-bold text-xl lg:text-4xl absolute w-1/3 lg:w-3/5 aspect-video flex justify-center items-center rounded-2xl top-5 -translate-y-110 left-0 lg:-translate-x-1/3">
                                 2
                             </div>
                             Pengajuan kerjasama dapat dilakukan dengan
                             menghubungi media partner yang tertera di bio
                             instagram BEM FISIP UB.
                         </div>
-                        <div className="w-full  bg-transparent border-x-2 border-b-2 flex  items-center border-[#006181] relative p-5 rounded-2xl">
-                            <div className="text-[#F7EDE4] bg-[#006181] font-bold text-xl lg:text-4xl absolute w-2/5 lg:w-3/5 aspect-video flex justify-center items-center rounded-2xl top-5 -translate-y-full left-0 lg:-translate-x-1/3">
+                        <div className="w-full  bg-transparent border-x-2 border-b-2 flex  items-center border-[#006181] relative p-5 rounded-2xl text-justify">
+                            <div className="text-[#F7EDE4] bg-[#006181] font-bold text-xl lg:text-4xl absolute w-1/3 lg:w-3/5 aspect-video flex justify-center items-center rounded-2xl top-5 -translate-y-110 left-0 lg:-translate-x-1/3">
                                 3
                             </div>
                             Pihak yang mengajukan kerjasama harus membaca dan
@@ -47,7 +47,7 @@ const Mitra = () => {
                         KETENTUAN
                     </h1>
                     <div className="w-full   bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3">
+                        <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3 text-justify">
                             <li>
                                 Pihak yang mengajukan kerjasama harus memberikan
                                 20 followers untuk akun Instagram @bemfisipub
@@ -90,7 +90,7 @@ const Mitra = () => {
                         PARTNERSHIP
                     </h1>
                     <div className="w-full bg-transparent border-x-2 border-b-2 flex mt-10   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal md:text-base text-sm lg:text-lg flex flex-col gap-3">
+                        <ul className="list-decimal md:text-base text-sm lg:text-lg flex flex-col gap-3 text-justify">
                             <li>
                                 Pihak yang mengajukan kerjasama diharuskan untuk
                                 memperhatikan serta mematuhi ketentuan yang
@@ -116,7 +116,7 @@ const Mitra = () => {
                         KETENTUAN
                     </h1>
                     <div className="w-full  bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal md:text-base text-sm lg:text-lg flex flex-col gap-3">
+                        <ul className="list-decimal md:text-base text-sm lg:text-lg flex flex-col gap-3 text-justify">
                             <li>
                                 Pihak yang menawarkan kerjasama dapat
                                 menghubungi nomor penanggungjawab pada jam
@@ -152,7 +152,7 @@ const Mitra = () => {
                         VISITASI & KUNJUNGAN
                     </h1>
                     <div className="w-full text-lg bg-transparent border-x-2 border-b-2 flex mt-10   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3">
+                        <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3 text-justify">
                             <li>
                                 Surat undangan/pengajuan kunjungan dikirim
                                 melalui narahubung visitasi/kunjungan yang
@@ -193,7 +193,7 @@ const Mitra = () => {
                         KETENTUAN
                     </h1>
                     <div className="w-full text-lg bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal flex flex-col gap-3">
+                        <ul className="list-decimal text-sm md:text-base flex flex-col gap-3 text-justify">
                             <li>
                                 Surat atau undangan dikirim melalui email
                                 adkesbemfisip2024@gmail.com dengan subjek email

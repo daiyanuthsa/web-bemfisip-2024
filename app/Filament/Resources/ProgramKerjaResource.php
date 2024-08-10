@@ -38,14 +38,22 @@ class ProgramKerjaResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id_satuan')
-                    ->numeric()
-                    ->sortable()->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('satuan')
+                // Tables\Columns\TextColumn::make('id_satuan')
+                //     ->numeric()
+                //     ->sortable()->toggleable(isToggledHiddenByDefault: true),
+                // Tables\Columns\TextColumn::make('satuan')
+                //     ->label('Satuan')
+                //     ->getStateUsing(function ($record) {
+                //         return $record->satuan->satuan . ' - ' . $record->satuan->nama_satuan;
+                //     })
+                //     ->sortable()
+                //     ->searchable(),
+                Tables\Columns\TextColumn::make('satuan.satuan') // Mengakses kolom satuan dari relasi satuan
                     ->label('Satuan')
-                    ->getStateUsing(function ($record) {
-                        return $record->satuan->satuan . ' - ' . $record->satuan->nama_satuan;
-                    })
+                    ->sortable()
+                    ->searchable()->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('satuan.nama_satuan') // Mengakses kolom nama_satuan dari relasi satuan
+                    ->label('Satuan')
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('nama_proker')
