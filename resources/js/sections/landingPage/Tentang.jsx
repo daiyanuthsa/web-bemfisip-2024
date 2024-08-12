@@ -18,10 +18,10 @@ const data = [
 
 const Tentang = () => {
   return (
-      <section className="relative">
+      <section className="relative ">
           <div className="h-full w-full bg-gradient-to-b from-[#FAFAF9] via-[#FAFAF9] via-20% to-transparent z-0 absolute top-0 left-0"></div>
 
-          <div className="w-full flex lg:flex-row flex-col gap-10 relative z-10 ">
+          <div className="w-full flex lg:flex-row flex-col gap-10 relative z-10  ">
               <div className="h-10 w-1/2 bg-gradient-to-r from-white  via-[#006181] to-[#00141B]"></div>
               <div className="lg:w-1/2 text-[#4C2C17] text-left lg:self-auto self-center font-inter flex-col flex justify-center ">
                   <h1
@@ -40,7 +40,7 @@ const Tentang = () => {
                   </h1>
               </div>
           </div>
-          <main className="container mx-auto divide-x-0 lg:divide-y-0 divide-y-4 lg:divide-x-4 divide-opacity-60 divide-black py-20 lg:px-16 md:px-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <main className="container mx-auto divide-x-0 lg:divide-y-0 divide-y-4  lg:divide-x-4 divide-opacity-60 divide-black py-20 lg:px-16 md:px-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-5">
               {data.map((item, i) => (
                   <div className="flex flex-col w-full gap-3 items-center font-inter p-5  relative">
                       {i === 1 ? (

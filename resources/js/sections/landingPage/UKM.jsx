@@ -6,7 +6,7 @@ import LoLso from "../../Data/LoLso";
 const UKM = () => {
   return (
     <section className="w-full py-20">
-      <main className="w-full relative flex lg:flex-row flex-col items-center gap-10">
+      <main className="w-full relative flex lg:flex-row flex-col items-center gap-10 overflow-hidden">
         <img
           src={polkadot}
           alt="img"

@@ -6,21 +6,20 @@ import { Link } from "@inertiajs/react";
 
 const ArticleCard = ({ title, image, bgColor, id }) => (
     <div
-        className="flex gap-2 w-full"
+        className="flex gap-2 "
         data-aos="fade-down"
         data-aos-duration="2000"
     >
         <div
-            className="bg-white text-white rounded-lg p-4 flex flex-col gap-2 items-center justify-center"
+            className="bg-white  text-white rounded-lg p-4 flex flex-col gap-2 items-center justify-center"
             style={{
                 backgroundColor: bgColor,
                 width: "100%",
-                maxWidth: "300px",
-                minHeight: "200px",
+              
             }}
         >
-            <h1 className="text-lg lg:text-2xl text-center text-balance font-semibold truncate h-16">
-                {title}
+            <h1 className="text-lg lg:text-2xl text-center max-w-28 lg:max-w-44 text-balance font-semibold truncate line-clamp-2 h-16 ">
+                {title}   
             </h1>
             <a
                 className="self-end border-white border px-2 rounded-lg"
@@ -29,12 +28,12 @@ const ArticleCard = ({ title, image, bgColor, id }) => (
                 Tap Here
             </a>
         </div>
-        <div className="aspect-square w-32">
+        <div className="aspect-square w-48  ">
             <img
                 src={image}
                 alt="img"
                 draggable="false"
-                className="w-full h-full rounded-lg object-cover"
+                className="size-full  rounded-lg object-cover"
             />
         </div>
     </div>
@@ -46,7 +45,7 @@ const Artikel = ({ artikels }) => {
         <section>
             <div
                 style={{ backgroundImage: `url(${pattern})` }}
-                className="lg:h-screen w-full relative"
+                className="lg:h-screen w-full relative overflow-hidden"
             >
                 <div className="h-full w-full bg-gradient-to-b from-[#FAFAF9] via-[#FAFAF9] via-20% to-transparent z-0 absolute top-0 left-0"></div>
                 <div className="h-2/4 w-full bg-gradient-to-t from-[#FAFAF9] via-[#FAFAF9] via-20% to-transparent z-0 absolute top-0 -translate-y-full left-0"></div>
@@ -59,6 +58,53 @@ const Artikel = ({ artikels }) => {
 
                 <main className="container mx-auto font-inter relative h-full lg:px-16 md:px-10 px-4 lg:py-10 py-32 flex lg:flex-row flex-col-reverse">
                     <div className="flex lg:flex-row flex-col relative z-10 gap-4 lg:w-3/5 justify-center items-center lg:pb-56">
+                    {/* <div className="flex flex-col gap-4">
+                        <ArticleCard
+                            // key={article.id}
+                            // id={article.id}
+                            title={"test ini berita"}
+                            image={
+                                import.meta.env.VITE_APP_URL +
+                                "storage/" 
+                            }
+                            bgColor="#4C2C17"
+                        />
+                        <ArticleCard
+                            // key={article.id}
+                            // id={article.id}
+                            title={"test ini berita"}
+                            image={
+                                import.meta.env.VITE_APP_URL +
+                                "storage/" 
+                            }
+                            bgColor="#4C2C17"
+                        />
+                             
+                            </div>
+
+                            <div className="flex flex-col lg:mt-10 gap-4">
+                        <ArticleCard
+                            // key={article.id}
+                            // id={article.id}
+                            title={"test ini berita"}
+                            image={
+                                import.meta.env.VITE_APP_URL +
+                                "storage/" 
+                            }
+                            bgColor="#4C2C17"
+                        />
+                        <ArticleCard
+                            // key={article.id}
+                            // id={article.id}
+                            title={"test ini berita"}
+                            image={
+                                import.meta.env.VITE_APP_URL +
+                                "storage/" 
+                            }
+                            bgColor="#4C2C17"
+                        />
+                             
+                            </div> */}
                         {artikels.length === 0 ? (
                             <p>Nantikan artikel menarik disini!</p>
                         ) : (

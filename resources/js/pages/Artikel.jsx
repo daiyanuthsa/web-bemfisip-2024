@@ -11,7 +11,7 @@ const dummy = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const appUrl = import.meta.env.VITE_APP_URL;
 
 export default function Artikel({ artikels }) {
-    console.log(artikels);
+    
     return (
         <>
             <Navbar />
