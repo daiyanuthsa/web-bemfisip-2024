@@ -45,7 +45,6 @@ class ArtikelResource extends Resource
                     ->loadingIndicatorPosition('left')
                     ->panelLayout('compact')
                     ->removeUploadedFileButtonPosition('right') // Tombol hapus file
-                    ->preserveFilenames()
                     ->enableDownload()
             ]);
     }

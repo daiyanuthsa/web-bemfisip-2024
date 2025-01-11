@@ -38,7 +38,7 @@ const Mitra = () => {
                                 3
                             </div>
                             Pihak yang mengajukan kerjasama harus membaca dan
-                            memenuhi ketentuan-ketentuan yang tertera
+                            memenuhi ketentuan-ketentuan yang tertera.
                         </div>
                     </main>
                 </header>
@@ -50,20 +50,20 @@ const Mitra = () => {
                         <ul className="list-decimal text-sm md:text-base lg:text-lg flex flex-col gap-3 text-justify">
                             <li>
                                 Pihak yang mengajukan kerjasama harus memberikan
-                                20 followers untuk akun Instagram @bemfisipub
+                                20 followers untuk akun Instagram @bemfisipub .
                             </li>
                             <li>
                                 Pihak yang mengajukan kerjasama harus memasang
                                 logo kabinet BEM FISIP UB 2024 pada bahan
-                                postingan yang akan dipublikasikan
+                                postingan yang akan dipublikasikan.
                             </li>
                             <li>
                                 Postingan akan dipublikasikan satu kali melalui
-                                Instagram Story BEM FISIP UB
+                                Instagram Story BEM FISIP UB.
                             </li>
                             <li>
                                 Publikasi postingan hanya akan dilakukan pada
-                                hari Sabtu
+                                hari Sabtu.
                             </li>
                             <li>
                                 Pengumpulan daftar followers dan bahan media
@@ -73,16 +73,25 @@ const Mitra = () => {
                             </li>
                             <li>
                                 Bahan media partner dikirimkan dengan kualitas
-                                HD atau resolusi tinggi
+                                HD atau resolusi tinggi.
                             </li>
                             <li>
                                 Logo BEM FISIP UB dapat diunduh di tautan
-                                berikut ini: https://bit.ly/3UDsTom
+                                berikut ini:{" "}
+                                <a href="https://bit.ly/3UDsTom"
+                                target="_blank">
+                                    https://bit.ly/3UDsTom
+                                </a>
+                                .
                             </li>
                         </ul>
-                        <h1 className="lg:text-4xl text-lg text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-5 lg:px-20 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung :
-                        </h1>
+                        <a
+                            href="https://wa.me/6282375320144"
+                            target="_blank"
+                            className="lg:text-xl text-sm text-[#F7EDE4] absolute bottom-0 text-center bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2"
+                        >
+                            Narahubung : 082375320144 (Ilham)
+                        </a>
                     </div>
                 </section>
                 <section className="container  text-lg mx-auto py-20 lg:px-24 md:px-10 px-4">
@@ -94,7 +103,7 @@ const Mitra = () => {
                             <li>
                                 Pihak yang mengajukan kerjasama diharuskan untuk
                                 memperhatikan serta mematuhi ketentuan yang
-                                tertera
+                                tertera.
                             </li>
                             <li>
                                 Pengajuan kerjasama kemitraan dapat dilakukan
@@ -108,9 +117,13 @@ const Mitra = () => {
                                 kemitraan yang tersedia.
                             </li>
                         </ul>
-                        <h1 className="lg:text-4xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-20 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung :
-                        </h1>
+                        {/* <a
+                            href="https://wa.me/6281318303082"
+                            target="_blank"
+                            className="lg:text-3xl text-sm text-[#F7EDE4] absolute bottom-0 text-center bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2"
+                        >
+                            Narahubung : 081318303082 (Audira)
+                        </a> */}
                     </div>
                     <h1 className="py-4 text-xl px-6 text-[#006181] lg:px-20 lg:text-5xl font-bold mt-10   w-fit rounded-3xl mx-auto">
                         KETENTUAN
@@ -124,17 +137,18 @@ const Mitra = () => {
                             </li>
                             <li>
                                 Jam kerja dari FISIP With External yakni
-                                Senin-Jumat pukul 07.00-18.00
+                                Senin-Jumat pukul 07.00-18.00.
                             </li>
                             <li>
                                 Pihak yang mengajukan kerjasama dapat
                                 mengirimkan proposal, bersamaan saat menghubungi
-                                PJ terkait
+                                PJ terkait.
                             </li>
                             <li>
                                 Kedua belah pihak dapat mengatur jadwal untuk
                                 melakukan diskusi terkait kerjasama dan untuk
-                                melakukan penandatanganan nota kesepahaman (MoU)
+                                melakukan penandatanganan nota kesepahaman
+                                (MoU).
                             </li>
                             <li>
                                 Kerjasama dapat berlaku setelah penandatanganan
@@ -142,9 +156,13 @@ const Mitra = () => {
                                 ada.
                             </li>
                         </ul>
-                        <h1 className="lg:text-3xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung : 081288448951 ( Hansen )
-                        </h1>
+                        <a
+                            href="https://wa.me/6281318303082"
+                            target="_blank"
+                            className="lg:text-xl text-sm text-[#F7EDE4] absolute bottom-0 text-center bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2"
+                        >
+                            Narahubung : 081318303082 (Audira)
+                        </a>
                     </div>
                 </section>
                 <section className="container  text-lg mx-auto py-20 lg:px-24 md:px-10 px-4">
@@ -185,29 +203,31 @@ const Mitra = () => {
                                 tercantum di IG BEM FISIP UB.
                             </li>
                         </ul>
-                        <h1 className="lg:text-3xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
+                        <a
+                            href="https://wa.me/6281280881357"
+                            target="_blank"
+                            className="lg:text-xl text-sm text-[#F7EDE4] absolute bottom-0 text-center bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2"
+                        >
                             Narahubung : 081280881357 (Haidar)
-                        </h1>
+                        </a>
                     </div>
-                    <h1 className="py-4  text-[#006181] px-20 text-xl lg:text-5xl font-bold mt-10   w-fit rounded-3xl mx-auto">
-                        KETENTUAN
+                </section>
+                <section className="container  text-lg mx-auto py-20 lg:px-24 md:px-10 px-4">
+                    <h1 className="py-4 px-6 lg:px-20 text-xl lg:text-5xl font-bold bg-[#006181] text-[#F7EDE4]    w-fit rounded-3xl mx-auto">
+                        PENERIMAAN SURAT
                     </h1>
                     <div className="w-full text-lg bg-transparent border-x-2 border-b-2 flex   items-center border-[#006181] relative p-10 rounded-2xl">
-                        <ul className="list-decimal text-sm md:text-base flex flex-col gap-3 text-justify">
+                        <ul className="list-decimal text-sm md:text-base lg:text-lg
+                         flex flex-col gap-3 text-justify">
                             <li>
                                 Surat atau undangan dikirim melalui email
                                 adkesbemfisip2024@gmail.com dengan subjek email
                                 "Surat Undangan_Nama Kegiatan_Penyelenggara
-                                Kegiatan"
+                                Kegiatan".
                             </li>
                             <li>
                                 Setelah mengirim email, lakukan konfirmasi
-                                kepada narahubung Adkes BEM FISIP UB 2024,
-                                yaitu:
-                                <ul>
-                                    <li>LINE: divajpg/</li>
-                                    <li>WA: 081288448951 ( Hansen )</li>
-                                </ul>
+                                kepada narahubung Adkes BEM FISIP UB 2024.
                             </li>
                             <li>
                                 Surat kemudian akan direkap dan disampaikan
@@ -216,12 +236,16 @@ const Mitra = () => {
                             </li>
                             <li>
                                 Note: pengiriman surat atau undangan paling
-                                lambat H-2 sebelum kegiatan berlangsung
+                                lambat H-2 sebelum kegiatan berlangsung.
                             </li>
                         </ul>
-                        <h1 className="lg:text-3xl text-xl text-[#F7EDE4] absolute bottom-0 bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2">
-                            Narahubung : 081288448951 ( Hansen )
-                        </h1>
+                        <a
+                            href="https://wa.me/6282336136546"
+                            target="_blank"
+                            className="lg:text-xl text-sm text-[#F7EDE4] absolute bottom-0 text-center bg-[#006181] px-6 lg:px-10 py-2 rounded-2xl left-1/2 -translate-x-1/2 translate-y-1/2"
+                        >
+                            Narahubung : 082336136546 (Diva)
+                        </a>
                     </div>
                 </section>
             </div>

@@ -53,7 +53,7 @@ class AnggotaResource extends Resource
                     ->label('Sisi Pertama')
                     ->required()
                     ->image()
-                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg'])
+                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg', 'image/webp'])
                     ->disk('public')
                     ->directory(function (callable $get) {
                         $satuanId = $get('satuan_id');
@@ -69,7 +69,7 @@ class AnggotaResource extends Resource
                 Forms\Components\FileUpload::make('image_link2')
                     ->label('Sisi Kedua')
                     ->image()
-                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg'])
+                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg', 'image/webp'])
                     ->disk('public')
                     ->directory(function (callable $get) {
                         $satuanId = $get('satuan_id');
@@ -89,7 +89,7 @@ class AnggotaResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
-            
+
             ->columns([
                 Tables\Columns\TextColumn::make('nama_anggota')
                     ->searchable()->sortable(),

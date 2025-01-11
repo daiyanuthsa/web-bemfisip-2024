@@ -27,7 +27,7 @@ const Kalender = () => {
                 <iframe
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FJakarta&bgcolor=%233F51B5&showTitle=0&showPrint=0&showTz=0&src=Y19jOGNmZmMzYzAyODMwZDRiNWUyM2VhMzZkN2I5OWM5ZTNjYWUxMWY3YWMxZmQ0N2JiNzI3MDA4NzY4MzVmNjAxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA"
+                    src="https://calendar.google.com/calendar/embed?src=4bb8a50ce04f78e2c0d627a16ff41fc7ab700a83ca71c7be12135c19e6db8d1e%40group.calendar.google.com&ctz=Asia%2FBangkok"
                     className="mx-auto lg:w-3/5 w-full aspect-[5/4]"
                     frameborder="0"
                     scrolling="no"

@@ -3,23 +3,17 @@ import pattern from "../../../assets/LandingPage/pattern.png";
 import dekor from "../../../assets/LandingPage/dekor.png";
 import { Link } from "@inertiajs/react";
 
-
 const ArticleCard = ({ title, image, bgColor, id }) => (
-    <div
-        className="flex gap-2 "
-        data-aos="fade-down"
-        data-aos-duration="2000"
-    >
+    <div className="flex gap-2 " data-aos="fade-down" data-aos-duration="2000">
         <div
             className="bg-white  text-white rounded-lg p-4 flex flex-col gap-2 items-center justify-center"
             style={{
                 backgroundColor: bgColor,
                 width: "100%",
-              
             }}
         >
             <h1 className="text-lg lg:text-2xl text-center max-w-28 lg:max-w-44 text-balance font-semibold truncate line-clamp-2 h-16 ">
-                {title}   
+                {title}
             </h1>
             <a
                 className="self-end border-white border px-2 rounded-lg"
@@ -40,7 +34,7 @@ const ArticleCard = ({ title, image, bgColor, id }) => (
 );
 
 const Artikel = ({ artikels }) => {
-    console.log(artikels)
+    console.log(artikels);
     return (
         <section>
             <div
@@ -79,7 +73,6 @@ const Artikel = ({ artikels }) => {
                             }
                             bgColor="#4C2C17"
                         />
-                             
                             </div>
 
                             <div className="flex flex-col lg:mt-10 gap-4">
@@ -133,11 +126,11 @@ const Artikel = ({ artikels }) => {
                                         id={article.id}
                                         title={article.judul_artikel}
                                         image={
-                                            appUrl +
+                                            import.meta.env.VITE_APP_URL +
                                             "storage/" +
                                             article.link_gambar
                                         }
-                                        bgColor={article.bgColor}
+                                        bgColor="#006181"
                                     />
                                 ))}
                             </div>

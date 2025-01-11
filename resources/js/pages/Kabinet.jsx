@@ -7,24 +7,23 @@ import { Head } from "@inertiajs/react";
 import Footer from "../components/Footer";
 import FlipCard from "../sections/satuan/flipImage";
 
-
 const Kabinet = ({ satuan, proker, bph, staf }) => {
     const { nama } = useParams();
     const appUrl = import.meta.env.VITE_APP_URL;
 
-     const [isFlipped, setIsFlipped] = useState(false);
-     const [isDelayActive, setIsDelayActive] = useState(false);
+    const [isFlipped, setIsFlipped] = useState(false);
+    const [isDelayActive, setIsDelayActive] = useState(false);
 
-     function flipCard() {
-         if (isDelayActive) return; // Prevent flipping if delay is active
+    function flipCard() {
+        if (isDelayActive) return; // Prevent flipping if delay is active
 
-         setIsFlipped(!isFlipped);
-         setIsDelayActive(true);
+        setIsFlipped(!isFlipped);
+        setIsDelayActive(true);
 
-         setTimeout(() => {
-             setIsDelayActive(false);
-         }, 500); // 1 second delay
-     }
+        setTimeout(() => {
+            setIsDelayActive(false);
+        }, 500); // 1 second delay
+    }
 
     return (
         <>
@@ -92,7 +91,14 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                             </div>
                         )}
                     </main>
-                    <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap-reverse justify-center gap-[5%] ">
+                    <div
+                        className={`container mx-auto lg:px-16 py-10 md:px-10 px-4 flex ${
+                            window.location.href ===
+                            "https://bem.fisip.ub.ac.id/biro/PUSKOMINFO"
+                                ? "flex-wrap-reverse"
+                                : "flex-wrap"
+                        } justify-center gap-[2%]`}
+                    >
                         {bph ? (
                             bph.map((item, i) => (
                                 <a
@@ -137,7 +143,10 @@ const Kabinet = ({ satuan, proker, bph, staf }) => {
                         )}
                     </div>
 
-                    <div className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap justify-center gap-[2%] ">
+                    <div
+                        className="container mx-auto lg:px-16 py-10 md:px-10 px-4 flex flex-wrap
+                     justify-center gap-[5%] "
+                    >
                         {staf.length > 0 ? (
                             staf.map((item, i) => (
                                 <a

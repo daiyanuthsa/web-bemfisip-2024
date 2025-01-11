@@ -7,14 +7,21 @@ const Comprof = () => {
             <div className="lg:w-1/3 w-4/5 lg:min-h-52 min-h-32 bg-gradient-to-r from-black from-0% via-[#006181] via-30% to-white  border-b-4 border-r-2 border-black shadow-2xl rounded-br-full rounded-tr-[1000px] "></div>
             <main className=" relative py-20  lg:h-screen flex lg:flex-row flex-col justify-start items-center">
                 <div class="lg:w-1/2 w-5/6 lg:h-4/5 h-[40vh] bg-gradient-to-l from-[#1F3A49]  via-[#4A8CAF] to-[#8EBED7]  rounded-l-2xl absolute  top-10 right-0">
-                    <iframe
-                        class="w-full aspect-video absolute top-1/2 -translate-y-1/2 right-10 lg:right-1/4 rounded-3xl"
-                        src="https://www.youtube.com/embed/aKHU2NaF6mo?si=jY7T5rQDlqj_JfYj"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                    ></iframe>
+                    <video
+                        className="w-full aspect-video absolute top-1/2 -translate-y-1/2 right-10 lg:right-1/4 rounded-3xl bg-black"
+                        controls
+                        preload="auto"
+                        title="Company Profile BEM FISIP 2024"
+                        autoPlay
+                        loop
+                        muted
+                    >
+                        <source
+                            src="https://bem.fisip.ub.ac.id/storage/comprof_720.mp4"
+                            type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div className="h-[50vh] lg:hidden"></div>
                 <img
@@ -33,7 +40,7 @@ const Comprof = () => {
                 <div className="lg:w-2/5 text-[#4C2C17] text-balance flex flex-col gap-2  font-inter">
                     <h1
                         data-aos="fade-right"
-                        className=" lg:text-5xl text-2xl  font-semibold text-center "
+                        className=" lg:text-5xl text-2xl  font-extrabold text-center "
                     >
                         Company Profile BEM FISIP UB 2024
                     </h1>

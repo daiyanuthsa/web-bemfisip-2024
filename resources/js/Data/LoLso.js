@@ -45,7 +45,7 @@ const LoLso =[
       },
     {
         img: HIMAPOL,
-        nama: "HIMAPOL UB",
+        nama: "HIMAPOLITIK UB",
         desc: "Himpunan Mahasiswa Ilmu Politik",
       },
     {

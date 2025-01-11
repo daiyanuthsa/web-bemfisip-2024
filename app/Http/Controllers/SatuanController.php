@@ -22,8 +22,12 @@ class SatuanController extends Controller
             if ($bph->isNotEmpty()) {
                 if ($bph->count() == 3) {
                     $bph = $bph->slice(0, 3); // Ensure we are only working with the first 3 items
-                    $bph = collect([$bph[0], $bph[2], $bph[1]])->merge($bph->slice(3));
+                    $bph = collect([$bph[2], $bph[1], $bph[0]])->merge($bph->slice(3));
+                } else if ($bph->count() == 2) {
+                    $bph = $bph->slice(0, 2); // Ensure we are only working with the first 2 items
+                    $bph = collect([$bph[1], $bph[0]])->merge($bph->slice(3));
                 }
+
             } else {
                 $bph = null;
             }

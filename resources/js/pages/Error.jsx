@@ -2,7 +2,7 @@ import React from "react";
 import { Head, Link } from "@inertiajs/react";
 import Logo from "../../assets/logo_loader.png";
 
-export default function Home() {
+export default function Error() {
     return (
         <>
             <Head title="BEM FISIP 2024 || Home" />

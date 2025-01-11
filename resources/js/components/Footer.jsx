@@ -18,7 +18,7 @@ const Footer = ({bg ='bg-transparent'}) => {
                               ADVO CENTER
                           </a>
                       </div>
-                      <div className="w-full grid gap-y-4 mt-10 lg:mt-0 grid-cols-2 text-white">
+                      <div className="w-full grid lg:my-16 mt-10 lg:gap-y-0 gap-y-4  grid-cols-2 text-white">
                           <a
                               className="flex items-center gap-3"
                               href="https://www.tiktok.com/@bemfisipub"

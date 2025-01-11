@@ -37,11 +37,11 @@ const Navbar = () => {
                                 text: "Kepengurusan",
                                 items: [
                                     {
-                                        text: "Biro Kesekretariatan",
+                                        text: "Biro Administrasi Kesekretariatan",
                                         to: "/biro/ADKES",
                                     },
                                     {
-                                        text: "Biro Keuangan",
+                                        text: "Biro Administrasi Keuangan",
                                         to: "/biro/ADKEU",
                                     },
                                     {
@@ -121,11 +121,11 @@ const Navbar = () => {
                                 text: "Kepengurusan",
                                 items: [
                                     {
-                                        text: "Biro Kesekretariatan",
+                                        text: "Biro Adminstrasi Kesekretariatan",
                                         to: "/biro/ADKES",
                                     },
                                     {
-                                        text: "Biro Keuangan",
+                                        text: "Biro Administrasi Keuangan",
                                         to: "/biro/ADKEU",
                                     },
                                     {
